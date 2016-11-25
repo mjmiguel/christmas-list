@@ -53,10 +53,22 @@ li.active {
 
 /******************HOME CONTENT*****************/
 
-#hey {
-	font-size: 1.25em;
+#welcome {
+	font-size: 3.5em;
 	font-family: "Lobster", sans-serif;
 	padding-bottom: 20px;
+	color: #000033;
+}
+
+#choice {
+	font-size: 3em;
+	font-family: "Lobster", sans-serif;
+	padding-bottom: 20px;
+	color: #000033;
+}
+
+#choice a {
+	color: #000033;
 }
 
 .about-me {
