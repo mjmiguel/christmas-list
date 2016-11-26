@@ -8,7 +8,7 @@ body {
 /******************HEADER*****************/
 
 #name {
-	font-family: 'Kreon', serif;
+	font-family: 'Suez One', serif;
 	font-size: 1.5em; 
 	color: #000033;	
 }
@@ -62,7 +62,7 @@ li.active {
 
 #choice {
 	font-size: 3em;
-	font-family: "Lobster", sans-serif;
+	font-family: 'Suez One', serif;
 	padding-bottom: 20px;
 	color: #000033;
 }
@@ -80,6 +80,10 @@ li.active {
 #after-hey {
 	font-size: 0.8em;
 	padding-left: 20px;
+}
+
+div.row {
+	padding-bottom: 20px;
 }
 
 /******************RESUME CONTENT*****************/
