@@ -123,3 +123,15 @@ div.footer {
 	padding-top: 9px;
 	color: #000033;
 }
+
+a.footer {
+	text-decoration: none;
+	color: #000033;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #CCFFFF;
+}
+
+
