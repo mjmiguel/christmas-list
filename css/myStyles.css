@@ -86,8 +86,21 @@ div.row {
 	padding-bottom: 20px;
 }
 
-/******************RESUME CONTENT*****************/
+/******************Wish List Content*****************/
 
+table {
+	border-color: green;
+}
+
+.table td {
+	text-align: center;
+}
+
+.table th {
+	text-align: center;
+	font-size: 1.4em;
+	font-family: 
+}
 
 
 
