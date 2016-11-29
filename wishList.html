@@ -15,6 +15,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet'>
 	</head>	
 	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- need for bootstrap js -->
+		<script src="js/bootstrap.min.js"></script>
 		<div class="container">
 			<header class="page-header">
 				<ul class="nav nav-pills pull-right">
@@ -32,12 +34,18 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<p class="center-block about-me text-center"><a href="#"><button type="button" class="btn btn-outline-primary btn-large"><span id="choice">Submit</span></button><br></a> your wish list</p>
+					<a href="#"><p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice1"><span id="choice">Submit</span></button><br> your wish list</p></a> 
+					<div id="choice1" class="collapse">
+						<div class="form-group">
+							<label for="exampleTextarea">Example textarea</label>
+							<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+						</div>
+					</div>
 				</div>
 				<div class="col-md-4">
 				</div>
 				<div class="col-md-4">
-					<p class="center-block about-me text-center"><a href="#"><button type="button" class="btn btn-outline-primary btn-large"><span id="choice">View</span></button><br></a> your list giftee's wish list</p>
+					<a href="#"><p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large"><span id="choice">View</span></button><br> your giftee's wish list</p></a>
 				</div>
 			</div>
 		</div>
