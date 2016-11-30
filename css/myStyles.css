@@ -77,10 +77,6 @@ li.active {
 	color: #000033;
 }
 
-#after-hey {
-	font-size: 0.8em;
-	padding-left: 20px;
-}
 
 div.row {
 	padding-bottom: 20px;
@@ -106,9 +102,16 @@ table {
 	color: #000033;
 }
 
-#submitTextarea {
-	padding-bottom: 10px;
+#choice1 {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 1.2em;
 }
+
+button[type=submit] {
+	font-family: 'Suez One', serif;
+	font-size: 1.1em;
+}
+
 
 
 /******************CONTACT CONTENT*****************/
