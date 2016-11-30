@@ -106,7 +106,9 @@ table {
 	color: #000033;
 }
 
-
+#submitTextarea {
+	padding-bottom: 10px;
+}
 
 
 /******************CONTACT CONTENT*****************/

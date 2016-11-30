@@ -34,11 +34,31 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="#"><p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice1"><span id="choice">Submit</span></button><br> your wish list</p></a> 
+					<a href="#"><p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice1"><span id="choice">Post</span></button><br> your wish list</p></a> 
 					<div id="choice1" class="collapse">
 						<div class="form-group">
-							<label for="wish-List">Wish List</label>
-							<textarea class="form-control" id="submitTextarea" rows="3">Delete this and input your list</textarea>
+						    <label for="your-name">Your Name:</label>
+						    <select multiple class="form-control" id="your-name">
+						    	<option>Bob</option>
+						    	<option>Carol</option>
+						    	<option>Dan</option>
+						    	<option>Holly</option>
+						    	<option>Jaimie</option>
+						    	<option>Jamaal</option>
+						    	<option>Josh</option>
+						    	<option>Karli</option>
+						    	<option>Lauren</option>
+						    	<option>Mark</option>
+						    	<option>Michael</option>
+						    	<option>Mike W.</option>
+						    	<option>Mikie</option>
+						    	<option>Pat</option>
+						    </select>
+						</div>
+						<div class="form-group">
+							<label for="wish-list">Your Wish List</label>
+							<textarea class="form-control" id="submitTextarea" rows="3">Input your wish list here. "Submit" when done.</textarea>
+							<button type="submit" id="wish-submit" class="btn btn-secondary btn-block">Submit</button>
 						</div>
 					</div>
 				</div>
