@@ -18,7 +18,7 @@ var santa_list = {bob, carol, dan, holly, jaimie, jamaal, josh, karli, lauren, m
 
 function person {first, wish) {
 	this.firstName = first;
-	this,wishList = wish;
+	this.wishList = wish;
 }
 
 // var bob = new person ("bob","wishlist");
