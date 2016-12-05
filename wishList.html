@@ -37,10 +37,11 @@
 				<div class="col-md-4">
 					<p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice1"><span id="choice">Post</span></button><br> your wish list</p>
 					<div id="choice1" class="collapse">
-						<form action="https://formspree.io/xxmikemillaxx@gmail.com"method="POST">
+						<form action="https://formspree.io/xxmikemillaxx@gmail.com"method="POST" name="_next" value="www.google.com"">
+							<input type="hidden" name="_next" value="www.google.com" />
 							<div class="form-group">
 							    <label for="your-name">Your Name:</label>
-							    <select class="form-control" id="your-name" name="name-select-POST">
+							    <select class="form-control" id="your-name" name="myName">
 							    	<option>Bob</option>
 							    	<option>Carol</option>
 							    	<option>Dan</option>
@@ -59,11 +60,10 @@
 							</div>
 							<div class="form-group">
 								<label for="wish-list">Your Wish List:</label>
-								<textarea class="form-control" id="submitTextarea" rows="3" placeholder="Input your wish list here." name="wishlist-POST"></textarea>
+								<textarea class="form-control" id="submitTextarea" rows="3" placeholder="Input your wish list here." name="myWishlist"></textarea>
 							</div>
 							<div class="form-group">
-								<!-- <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button> -->
-								<button type="submit" class="btn btn-secondary btn-block" onclick="">Submit</button>
+								<button type="submit" class="btn btn-secondary btn-block">Submit</button>
 							</div>
 						</form>
 					</div>
@@ -73,7 +73,7 @@
 				<div class="col-md-4">
 					<p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice2"><span id="choice">View</span></button><br> your giftee's wish list</p>
 					<div id="choice2" class="collapse">
-						<form action="https://formspree.io/xxmikemillaxx@gmail.com"method="POST">
+						<form>
 							<div class="form-group">
 							    <label for="your-name">Their Name:</label>
 							    <select class="form-control" id="their-list">
