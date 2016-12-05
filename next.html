@@ -15,22 +15,31 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet'>
 	</head>	
 	<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- need for bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
 		<div class="container">
 			<header class="page-header">
 				<ul class="nav nav-pills pull-right">
 					<li class="active"><a class="nav-link" href="santaList.html">THE LIST</a></li>
 					<li><a class="nav-link" href="wishList.html"> ASK SANTA</a></li>
 				</ul>
-				<h3 class="h3 text-center"><a href="index.html" id="name">Christmas 2016</a></h3>
+				<h3 class="h3 text-left"><a href="index.html" id="name">Christmas 2016</a></h3>
 			</header>
 		</div>	
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<img class="img-circle img-responsive avatar center-block" src="img/me.jpg">
 				</div>
-				<div class="col-md-8 text-center about-me">
-					<h1>Submitted</h1>
+				<div class="col-md-4">
+					<img class="img-circle img-responsive avatar center-block" src="img/silas_hat.png">
+					
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="center-block text-center"><span id="welcome">Your List has been submitted.</span></p>
 				</div>
 			</div>
 		</div>
