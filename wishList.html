@@ -24,8 +24,8 @@
 				$("#row2hide, row2hide2").hide();
 			});
 			
-			$("buttonid").click(function() {
-				$("#divtoshow").show();
+			$("#listLookup").click(function() {
+				$("#row2show").show();
 			});
 		});
 		
@@ -42,6 +42,17 @@
 			</header>
 		</div>	
 		<div class="container">
+			<div hidden class="row" id="row2show">
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4">
+					<p>show this div </p>
+				</div>
+				<div class="col-md-4">
+				
+				</div>
+			</div>
 			<div class="row" id="row2hide">
 				<div class="col-md-6">
 					<img class="img-circle img-responsive avatar center-block" src="img/jack_hat.png">
@@ -86,7 +97,7 @@
 								<textarea class="form-control" id="submitTextarea" rows="3" placeholder="Input your wish list here." name="myWishlist"></textarea>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-secondary btn-block">Submit</button>
+								<button type="button" class="btn btn-secondary btn-block">Submit</button>
 							</div>
 						</form>
 					</div>
@@ -98,7 +109,7 @@
 					<div id="choice2" class="collapse">
 						<form>
 							<div class="form-group">
-							    <label for="your-name">Their Name:</label>
+							    <label for="their-name">Their Name:</label>
 							    <select class="form-control" id="their-list">
 							    	<option>Bob</option>
 							    	<option>Carol</option>
@@ -121,17 +132,6 @@
 							</div>
 						</form>
 					</div>
-				</div>
-			</div>
-			<div class="row" id="row2show">
-				<div class="col-md-4">
-				
-				</div>
-				<div class="col-md-4">
-				
-				</div>
-				<div class="col-md-4">
-				
 				</div>
 			</div>
 		</div>
