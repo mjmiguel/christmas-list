@@ -20,17 +20,14 @@
 		<script>
 		
 		$(document).ready(function(){
-			
-			
-			
-			$("#buttonid").click(function(){
-				$("#divtohide").hide();
-			}
+			$("#listLookup").click(function(){
+				$("#row2hide, row2hide2").hide();
+			});
 			
 			$("buttonid").click(function() {
 				$("#divtoshow").show();
-			}
-		}
+			});
+		});
 		
 		
 		
@@ -59,7 +56,7 @@
 					<p class="center-inline text-center about-me">Please limit gifts to around $75.</p>
 				</div>
 			</div>
-			<div class="row" id="row3" id="row2hide">
+			<div class="row" id="row2hide2">
 				<div class="col-md-4">
 					<p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice1"><span id="choice">Post</span></button><br> your wish list</p>
 					<div id="choice1" class="collapse">
