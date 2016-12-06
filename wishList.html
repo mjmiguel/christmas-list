@@ -20,15 +20,20 @@
 		<script>
 		//hide portraits row
 		$(document).ready(function(){
+			// get text from form selection
+			var x = "#" + $("#their-list option:selected").text().replace(/\s/g,"");
+			
 			$("#listLookup").click(function(){
 				$("#row2hide").hide();
 			});
-			
 			$("#listLookup").click(function() {
-				// get text from form selection
-				var x = "#" + $("#their-list option:selected").text().replace(/\s/g,"");
 				$(x).show();
+				$(x).addClass("wishDiv");
 			});
+			$(".wishDiv").click(function() {
+				$("wishDiv").hide();
+			});
+
 		});
 		</script>
 		<div class="container">
@@ -56,23 +61,23 @@
 				<div class="col-md-6">
 					<p class="center-block text-center"><span id="welcome">Wishlists</span></p>
 					<p class="center-inline text-center about-me">Please limit gifts to around $75.</p>
-					<div hidden class="well" id="Bob">
+					<div hidden class="well wishDiv" id="Bob">
 						<p class="text-center about-me">Bob would like:</p>
 						<p class="text-center">a small bottle of Grand Marnier</p>
 					</div>
-					<div hidden class="well" id="Carol">
+					<div hidden class="well wishDiv" id="Carol">
 						<p class="text-center about-me">Carol would like:</p>
 						<p class="text-center">to submit her christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Dan">
+					<div hidden class="well wishDiv" id="Dan">
 						<p class="text-center about-me">Dan would like:</p>
 						<p class="text-center">to submit his christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Holly">
+					<div hidden class="well wishDiv" id="Holly">
 						<p class="text-center about-me">Holly would like:</p>
 						<p class="text-center">to submit her christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Jaimie">
+					<div hidden class="well wishDiv" id="Jaimie">
 						<p class="text-center about-me">Jaimie</p>
 						<p class="text-left">Instead of physical gifts, this year Jaimie would be delighted with a donation to a non-denominational, non-partisan charity in her name.<br><br>Here are some suggestions:
 							<ul class="list-group">
@@ -84,11 +89,11 @@
 
 						<li class="list-group-item"><a href="https://vault.sierraclub.org/ways-to-give/">The Sierra Club</a> is the largest grassroots environmental organization in the county, and works to protect millions of acres of wilderness and pass legislation like the Clean Air Act and the Clean Water Act.</li><br> If you feel compelled to get me a physical gift, please support a local business if possible. <br><br> I also like herbal tea, books (literature, vegetarian and/or vegan cookbooks, gardening books), soap, socks, and chocolate. </p>
 					</div>
-					<div hidden class="well" id="Jamaal">
+					<div hidden class="well wishDiv" id="Jamaal">
 						<p class="text-center about-me">Jamaal would like:</p>
 						<p class="text-center">to submit his christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Josh">
+					<div hidden class="well wishDiv" id="Josh">
 						<p class="text-center about-me">Josh would like:</p>
 						<p class="text-left">Instead of physical gifts, this year Josh would be delighted with a donation to a non-denominational, non-partisan charity in his name. <br><br>Here are some suggestions:
 							<ul class="list-group">
@@ -102,31 +107,31 @@
 
 						<li class="list-group-item"><a href="http://www.meowcatrescue.org/donate/index.html">MEOW Cat Rescue</a> - this is the shelter where we got our cat Vince from.</li></p>
 					</div>
-					<div hidden class="well" id="Karli">
+					<div hidden class="well wishDiv" id="Karli">
 						<p class="text-center about-me">Karli would like:</p>
 						<p class="text-center">to submit her christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Lauren">
+					<div hidden class="well wishDiv" id="Lauren">
 						<p class="text-center about-me">Lauren would like:</p>
 						<p class="text-center">to submit her christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Mark">
+					<div hidden class="well wishDiv" id="Mark">
 						<p class="text-center about-me">Mark would like:</p>
 						<p class="text-center">to submit his christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Michael">
+					<div hidden class="well wishDiv" id="Michael">
 						<p class="text-center about-me">Michael would like:</p>
 						<p class="text-center">to submit his christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="MikeW">
+					<div hidden class="well wishDiv" id="MikeW">
 						<p class="text-center about-me">Mike W. would like:</p>
 						<p class="text-center">to submit his christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Mikie">
+					<div hidden class="well wishDiv" id="Mikie">
 						<p class="text-center about-me">Mikie would like:</p>
 						<p class="text-center">to submit her christmas list someday.</p>
 					</div>
-					<div hidden class="well" id="Pat">
+					<div hidden class="well wishDiv" id="Pat">
 						<p class="text-center about-me">Pat would like:</p>
 						<p class="text-center">a small bottle of Grand Marnier</p>
 					</div>
