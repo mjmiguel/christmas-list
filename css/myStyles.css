@@ -112,6 +112,10 @@ button[type=submit] {
 	font-size: 1.1em;
 }
 
+.form-control {
+	color: #000033;
+}
+
 
 
 /******************CONTACT CONTENT*****************/
