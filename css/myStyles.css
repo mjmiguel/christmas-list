@@ -88,7 +88,7 @@ table {
 	border-color: green;
 }
 
-tr:hover {
+tbody tr:hover {
 	background-color: yellow;
 }
 
