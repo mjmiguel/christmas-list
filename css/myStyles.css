@@ -89,7 +89,9 @@ table {
 }
 
 tbody tr:hover {
-	background-color: yellow;
+	background-color: #CCFFFF;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 .table td {
