@@ -88,6 +88,10 @@ table {
 	border-color: green;
 }
 
+tr:hover {
+	background-color: yellow;
+}
+
 .table td {
 	text-align: center;
 	color: #000033;
