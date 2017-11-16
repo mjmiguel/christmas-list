@@ -19,21 +19,21 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- need for bootstrap js -->
 		<script src="js/bootstrap.min.js"></script>
 		<script>
-		//hide portraits row
-		$(document).ready(function(){
-			$("#listLookup").click(function(){
-				$("#row2hide").hide();
+			//hide portraits row
+			$(document).ready(function(){
+				$("#listLookup").click(function(){
+					$("#row2hide").hide();
+				});
+				$("#listLookup").click(function() {
+					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,"");
+					$(x).show();
+					$(x).addClass("wishDiv");
+				});
+				// //hide previous list queries
+				// $(".well.wishDiv").click(function() {
+				// 	$(".well.wishDiv").hide();
+				// });
 			});
-			$("#listLookup").click(function() {
-				var x = "#" + $("#their-list option:selected").text().replace(/\s/g,"");
-				$(x).show();
-				$(x).addClass("wishDiv");
-			});
-			//hide previous list queries
-			$(".well.wishDiv").click(function() {
-				$(".well.wishDiv").hide();
-			});
-		});
 		</script>
 		<div class="container">
 			<header class="page-header">
@@ -230,7 +230,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice1"><span id="choice">Post</span></button><br> your wish list</p>
+					<p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large choice" data-toggle="collapse" data-target="#choice1"><span id="choice">Post</span></button><br> your wish list</p>
 					<div id="choice1" class="collapse">
 						<form action="https://formspree.io/xxmikemillaxx@gmail.com" method="POST">
 							<input type="hidden" name="_next" value="christmas-list/next.html"/> <!-- change landing page after form submission -->
