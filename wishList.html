@@ -27,12 +27,12 @@
 					$(x).show(); //show hidden div with list
 					$(x).addClass("wishDiv"); //show hidden div with list
 				});
-				// $("#choice1,#choice2").on("shown.bs.collapse",function(){
-				// 	var panel = $(this).find(".in");
-				// 	$("html,body").animate({
-				// 		scrollTop: $("panel")[0].scrollHeight - $("panel")[0].clientHeight
-				// 	}, 500);
-				// });
+				$("#choice1,#choice2").on("shown.bs.collapse",function(){
+					var panel = $(this).find(".in");
+					$("html,body").animate({
+						scrollTop: $(document).height()
+					}, "slow");
+				});
 			});
 		</script>
 		<div class="container">
