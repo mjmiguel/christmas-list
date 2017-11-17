@@ -19,19 +19,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- need for bootstrap js -->
 		<script src="js/bootstrap.min.js"></script>
 		<script>
-			//hide portraits row
+			//hide portraits row on click
 			$(document).ready(function(){
 				$("#listLookup").click(function(){
-					$("#row2hide").hide();
-				});
-				$("#listLookup").click(function() {
 					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,"");
-					$(x).show();
-					$(x).addClass("wishDiv");
+					$("#row2hide").hide(); //hide portraits row
+					$(x).show(); //show hidden div with list
+					$(x).addClass("wishDiv"); //show hidden div with list
 				});
-				// //hide previous list queries
-				// $(".well.wishDiv").click(function() {
-				// 	$(".well.wishDiv").hide();
+				// $("#choice1,#choice2").on("shown.bs.collapse",function(){
+				// 	var panel = $(this).find(".in");
+				// 	$("html,body").animate({
+				// 		scrollTop: $("panel")[0].scrollHeight - $("panel")[0].clientHeight
+				// 	}, 500);
 				// });
 			});
 		</script>
