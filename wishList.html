@@ -27,8 +27,9 @@
 					$(x).show(); //show hidden div with list
 					$(x).addClass("wishDiv"); //show hidden div with list
 				});
-				$("#choice1,#choice2").on("shown.bs.collapse",function(){
-					var panel = $(this).find(".in");
+				//scroll to bottom of page when choice buttom is clicked
+				$("#choice1,#choice2").on("shown.bs.collapse",function(){ //grab 
+					var panel = $(this).find(".in"); //select uncollapsed panel/list
 					$("html,body").animate({
 						scrollTop: $(document).height()
 					}, "slow");
@@ -41,7 +42,7 @@
 					<li><a class="nav-link" href="santaList.html">THE LIST</a></li>
 					<li class="active"><a class="nav-link" href="wishList.html"> ASK SANTA</a></li>
 				</ul>
-				<h3 class="h3 text-left"><a href="index.html" id="name">Christmas 2016</a></h3>
+				<h3 class="h3 text-left"><a href="index.html" id="name">Christmas 2017</a></h3>
 			</header>
 		</div>	
 		<div class="container">
@@ -230,7 +231,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large choice" data-toggle="collapse" data-target="#choice1"><span id="choice">Post</span></button><br> your wish list</p>
+					<p class="center-block about-me text-center"><button type="button" class="btn btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice1"><span id="choice">Post</span></button><br> your wish list</p>
 					<div id="choice1" class="collapse">
 						<form action="https://formspree.io/xxmikemillaxx@gmail.com" method="POST">
 							<input type="hidden" name="_next" value="christmas-list/next.html"/> <!-- change landing page after form submission -->
@@ -289,7 +290,7 @@
 							    </select>
 							</div>
 							<div class="form-group">
-								<button type="button" class="btn btn-secondary btn-block" id="listLookup">Submit</button>
+								<button type="submit" class="btn btn-secondary btn-block" id="listLookup">Submit</button>
 							</div>
 						</form>
 					</div>
@@ -298,7 +299,7 @@
 		</div>
 		<footer>
       		<div class="container footer">
-        		<p>&copy; MJM 2016<a class="pull-right" href="about.html">ABOUT</a></p>
+        		<p>&copy; MJM 2017<a class="pull-right" href="about.html">ABOUT</a></p>
       		</div>
     	</footer>
 	</body>
