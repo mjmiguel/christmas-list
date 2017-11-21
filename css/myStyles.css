@@ -53,6 +53,8 @@ li.active {
 
 /******************HOME CONTENT*****************/
 
+input[type="submit"]{ -webkit-appearance: none; } /***ios BS (make button styling show)***/
+
 #welcome {
 	font-size: 5.5em;
 	font-family: "Lobster", sans-serif;
