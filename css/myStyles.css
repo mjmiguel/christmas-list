@@ -53,7 +53,11 @@ li.active {
 
 /******************HOME CONTENT*****************/
 
-button[type="submit"]{ -webkit-appearance: none; } /***ios BS (make button styling show)***/
+button {
+
+	-webkit-appearance: none;
+	
+} 
 
 #welcome {
 	font-size: 5.5em;
@@ -118,7 +122,7 @@ tbody tr:hover {
 
 button[type=submit] {
 	font-family: 'Suez One', serif;
-	font-size: 1.1em;
+	font-size: 1.1em; 
 }
 
 .form-control {
