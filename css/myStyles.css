@@ -123,7 +123,7 @@ tbody tr:hover {
 	font-size: 1.2em;
 }
 
-button[type=submit] {
+.submit {
 	font-family: 'Suez One', serif;
 	font-size: 1.1em; 
 }

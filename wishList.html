@@ -22,8 +22,8 @@
 			//hide portraits row on click
 			$(document).ready(function(){
 				$("#listLookup").click(function(){
-					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,"");
 					$("#row2hide").hide(); //hide portraits row
+					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
 					$(x).show(); //show hidden div with list
 					$(x).addClass("wishDiv"); //show hidden div with list
 				});
@@ -33,10 +33,6 @@
 					$("html,body").animate({
 						scrollTop: $(document).height()
 					}, "slow");
-				});
-				//hide previous list queries
-				$(".well.wishDiv").click(function() {
-					$(".well.wishDiv").hide();
 				});
 			});
 		</script>
@@ -197,7 +193,6 @@
 								<li class="list-group-item">Some size 11 shoes like <a href="http://www.sanuk.com/new-mens-sidewalk-surfers/vagabond/SMF1001.html?dwvar_SMF1001_color=BNDL#start=4&cgid=mens-sidewalk-surfers">these</a></li>
 								<li class="list-group-item">A nice pair of jeans for work</li>
 							</ul>
-
 						</p>
 					</div>
 					<div hidden class="well" id="MikeW">
@@ -230,7 +225,6 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					
 				</div>
 			</div>
 			<div class="row">
@@ -263,7 +257,7 @@
 								<textarea class="form-control" id="submitTextarea" rows="3" placeholder="Input your wish list here." name="myWishlist"></textarea>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-secondary btn-block">Submit</button>
+								<button type="submit" class="btn btn-secondary btn-block submit">Submit</button>
 							</div>
 						</form>
 					</div>
@@ -294,7 +288,7 @@
 							    </select>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-secondary btn-block" id="listLookup">Submit</button>
+								<button type="button" class="btn btn-secondary btn-block submit" id="listLookup">Submit</button>
 							</div>
 						</form>
 					</div>
