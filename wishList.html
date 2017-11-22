@@ -29,7 +29,6 @@
 				});
 				//scroll to bottom of page when choice buttom is clicked
 				$("#choice1,#choice2").on("shown.bs.collapse",function(){ //grab 
-					var panel = $(this).find(".in"); //select uncollapsed panel/list
 					$("html,body").animate({
 						scrollTop: $(document).height()
 					}, "slow");
