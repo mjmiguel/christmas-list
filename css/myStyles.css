@@ -18,8 +18,10 @@ body {
 }
 
 /******************NAV LINKS**************/
-ol, ul {
-	margin-top: -40px;
+
+.testrow {
+	border-width: 5px;
+	border-color: #000000;
 }
 
 ul.nav {
