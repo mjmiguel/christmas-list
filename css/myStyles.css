@@ -4,6 +4,10 @@ body {
 	background-color: #336799;
 }
 
+.btn-default {
+	font-size: 0.9em;
+	border-radius: 5px;
+}
 
 /******************HEADER*****************/
 
@@ -63,11 +67,9 @@ li.active {
 
 /******************HOME CONTENT*****************/
 
-button {
-
+/*button {
 	-webkit-appearance: none;
-	
-} 
+} */
 
 #welcome {
 	font-size: 5.5em;
