@@ -7,6 +7,7 @@ body {
 .btn-default {
 	font-size: 0.9em;
 	border-radius: 5px;
+	border-color: none;
 }
 
 /******************HEADER*****************/
