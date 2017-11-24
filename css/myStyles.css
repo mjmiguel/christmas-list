@@ -14,7 +14,8 @@ body {
 }
 
 .page-header {
-	border-bottom-color: #CCFFFF;
+	/*border-bottom-color: #CCFFFF;*/
+	border-bottom: none;
 }
 
 /******************NAV LINKS**************/
