@@ -19,11 +19,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>	
 	    <script>
+	    	//scroll down diff of total document height and viewport height; slows before hitting bottom
 	    	$(document).ready(function(){
 	    		$("img").on("load", function(){ 
 					var WH = $(window).height();  
   					var SH = $('body').prop("scrollHeight");
-  					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); //scroll diff of total document height and viewport height; slows before hitting bottom
+  					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
 				});
 	    	});
 	    	
