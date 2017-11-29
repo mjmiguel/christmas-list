@@ -20,20 +20,19 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script>
 			//hide portraits row on click
-			$(document).ready(function(){
-				$("#listLookup").click(function(){
-					$("#row2hide").hide(); //hide portraits row
-					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
-					$(x).show(); //show hidden div with list
-					$(x).addClass("wishDiv"); //show hidden div with list
-					//hide any element with class="tag for later removal"
-					//$(x).addClass("tag for later removal");
-				});
-				//scroll to bottom of page when choice buttom is clicked
-				$("#choice1,#choice2").on("shown.bs.collapse",function(){ //grab 
-					$("html,body").animate({scrollTop: $(document).height()}, "slow", "linear");
-				});
-			});
+			// $(document).ready(function(){
+			// 	$("#listLookup").click(function(){
+			// 		$("#row2hide").hide(); //hide portraits row
+			// 		var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
+			// 		$(".div2hide").hide(); //hide currently shown div
+			// 		$(x).show(); //show hidden div with list
+			// 		$(x).addClass("wishDiv"); //show hidden div with list
+			// 	});
+			// 	//scroll to bottom of page when choice buttom is clicked
+			// 	$("#choice1,#choice2").on("shown.bs.collapse",function(){ 
+			// 		$("html,body").animate({scrollTop: $(document).height()}, "slow", "linear");
+			// 	});
+			// });
 		</script>
 		<div class="container">
 			<header class="page-header">
