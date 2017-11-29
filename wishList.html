@@ -19,20 +19,18 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 		<script src="js/bootstrap.min.js"></script>
 		<script>
-			//hide portraits row on click
-			// $(document).ready(function(){
-			// 	$("#listLookup").click(function(){
-			// 		$("#row2hide").hide(); //hide portraits row
-			// 		var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
-			// 		$(".div2hide").hide(); //hide currently shown div
-			// 		$(x).show(); //show hidden div with list
-			// 		$(x).addClass("wishDiv"); //show hidden div with list
-			// 	});
-			// 	//scroll to bottom of page when choice buttom is clicked
-			// 	$("#choice1,#choice2").on("shown.bs.collapse",function(){ 
-			// 		$("html,body").animate({scrollTop: $(document).height()}, "slow", "linear");
-			// 	});
-			// });
+			$(document).ready(function(){
+				$("#listLookup").click(function(){
+					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
+					$(".div2hide").hide(); //hide garland and shown wishlists
+					$(x).show(); //show hidden div with list
+					$(x).addClass("div2hide"); //tag for destruction (concealment)
+				});
+				//scroll to bottom of page when choice buttom is clicked
+				$("#choice1,#choice2").on("shown.bs.collapse",function(){ 
+					$("html,body").animate({scrollTop: $(document).height()}, "slow", "linear");
+				});
+			});
 		</script>
 		<div class="container">
 			<header class="page-header">
@@ -50,7 +48,7 @@
 			</header>
 		</div>	
 		<div class="container">
-			<div class="row" id="row2hide">
+			<div class="row div2hide">
 				<div class="col-lg-12">
 					<img class="img-responsive center-block" src="img/GARLAND_ORNAMENTS.png">
 				</div>
