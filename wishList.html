@@ -20,6 +20,13 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script>
 			$(document).ready(function(){
+				//scroll to bottom after page load
+				$("img").on("load", function(){ 
+					var WH = $(window).height();  
+  					var SH = $('body').prop("scrollHeight");
+  					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
+				});
+				//lookup list
 				$("#listLookup").click(function(){
 					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
 					$(".div2hide").hide(); //hide garland and shown wishlists
@@ -28,7 +35,9 @@
 				});
 				//scroll to bottom of page when choice buttom is clicked
 				$("#choice1,#choice2").on("shown.bs.collapse",function(){ 
-					$("html,body").animate({scrollTop: $(document).height()}, "slow", "linear");
+					var WH = $(window).height();  
+  					var SH = $('body').prop("scrollHeight");
+  					$('html, body').stop().animate({scrollTop: SH-WH}, 400);
 				});
 			});
 		</script>
@@ -111,7 +120,7 @@
 						<p class="text-center about-me">Josh would like:</p>
 						<p class="text-left">
 							<ul class="list-group">
-								<li class="list-group-item text-center">1 christmas list :)</li>
+								<li class="list-group-item text-center"></li>
 							</ul>
 						</p>
 					</div>
