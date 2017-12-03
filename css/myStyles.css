@@ -89,7 +89,7 @@ li.active {
 
 .about-me {
 	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 1.75em;
+	font-size: 1.7em;
 	color: #000033;
 }
 
@@ -141,12 +141,18 @@ tbody tr:hover {
 
 .list-group-item {
 	color: #000033;
-	font-size: 2em
+	font-size: 1.4em;
+	border-color: #000033;
 }
 
 .name-title {
 	font-family: 'Lily Script One', cursive;
 	font-size: 5em;
+	color: #000033;
+}
+
+.well {
+	padding: 15px;
 }
 
 /******************CONTACT CONTENT*****************/
