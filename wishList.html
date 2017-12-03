@@ -32,8 +32,9 @@
 					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
 					$(".hideMe").hide(); //hide garland and shown wishlists
 					$(x).show(); //show hidden div with list
-					$(x).animate({ scrollTop: $(x).prop("scrollHeight")}, 1000); //scroll to top of shown div
+					// $(x).animate({ scrollTop: $(x).prop("scrollHeight")}, 1000); //scroll to top of shown div
 					$(x).addClass("hideMe"); //tag for destruction (concealment)
+					$('html, body').animate({scrollTop: $(x).offset().top - 15}, 'slow'); //scroll to top of revealed div
 				});
 				//scroll to bottom of page when choice buttom is clicked
 				$("#choice1,#choice2").on("shown.bs.collapse",function(){ 
