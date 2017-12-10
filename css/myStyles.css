@@ -23,8 +23,9 @@ body {
 	border-bottom: none;
 }
 
-h3.text-left {
+.h1, .h2, .h3, h1, h2, h3 {
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /******************NAV LINKS**************/
@@ -89,7 +90,7 @@ li.active {
 
 .about-me {
 	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 1.7em;
+	font-size: 1.65em;
 	color: #000033;
 }
 
@@ -154,6 +155,8 @@ tbody tr:hover {
 .well {
 	padding: 15px;
 }
+
+
 
 /******************CONTACT CONTENT*****************/
 
