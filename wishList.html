@@ -9,17 +9,21 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/Normalize.css" rel="stylesheet">
 		<link href="css/myStyles.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet'>
-		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+		<link href="markitup/skins/markitup/style.css" rel="stylesheet" type="text/css"/>
+		<link href="markitup/sets/html/style.css" rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">	
-		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel='stylesheet'>
 		<link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!-- favicon -->
 	</head>	
 	<body>
+		<script type="text/javascript" src="markitup/jquery.markitup.js"></script>
+		<script type="text/javascript" src="markitup/sets/html/set.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 		<script src="js/bootstrap.min.js"></script>
-		<script>
+		<script type="text/javascript">
 			$(document).ready(function(){
 				//scroll to bottom after page load
 				$("img").on("load", function(){ 
@@ -40,7 +44,13 @@
 					var WH = $(window).height();  
   					var SH = $('body').prop("scrollHeight");
   					$('html, body').stop().animate({scrollTop: SH-WH}, 400);
+  					$("#html").markItUp(myHtmlSettings);
 				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function()	{
+		   		$('#html').markItUp(myHtmlSettings);
 			});
 		</script>
 		<div class="container">
@@ -253,7 +263,8 @@
 							</div>
 							<div class="form-group">
 								<label for="wish-list">Your Wish List:</label>
-								<textarea class="form-control" id="submitTextarea" rows="3" placeholder="Input your wish list here." name="myWishlist"></textarea>
+								<!-- id="submitTextarea" -->
+								<textarea class="form-control" id="html" cols="60" rows="10" placeholder="Input your wish list here." name="myWishlist"></textarea>
 							</div>
 							<div class="form-group">
 								<button type="submit" class="btn-default btn-secondary btn-block submit">Submit</button>
