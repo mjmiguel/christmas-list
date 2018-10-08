@@ -156,6 +156,13 @@ tbody tr:hover {
 	padding: 15px;
 }
 
+/******************Santa List Content*****************/
+
+
+.form-group label {
+	color: #000033;
+	font-family: 'Merriweather Sans', sans-serif;
+}
 
 /******************CONTACT CONTENT*****************/
 
