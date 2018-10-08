@@ -125,11 +125,6 @@ tbody tr:hover {
 	color: #000033;
 }
 
-#choice1 {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 1.2em;
-}
-
 .submit {
 	font-family: 'Suez One', serif;
 	font-size: 1.8em; 
@@ -162,6 +157,7 @@ tbody tr:hover {
 .form-group label {
 	color: #000033;
 	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 1.2em;
 }
 
 /******************CONTACT CONTENT*****************/
