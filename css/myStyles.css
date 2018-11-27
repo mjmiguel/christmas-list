@@ -161,6 +161,14 @@ tbody tr:hover {
 	padding: 15px;
 }
 
+.lgi-no-border {
+	color: #000033;
+	font-size: 1.4em;
+	border-color: #000033;
+	border: none;
+}
+
+
 /******************Santa List Content*****************/
 
 
