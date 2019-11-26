@@ -40,33 +40,55 @@
 				<div class="col-md-1">	
 				</div>
 			</div>
-			<header class="page-header">
-				<div class="row">
-					<div class="col-md-6">
-						<h3 class="h3 text-left"><a href="index.html" id="name">CHRISTMAS 2019</a></h3>
-					</div>
-					<div class="col-md-6">
-						<ul class="nav nav-pills pull-right">
-							<li><a class="nav-link" href="santaList.html">THE LIST</a></li>
-							<li><a class="nav-link" href="wishList.html"> ASK SANTA</a></li>
-						</ul>
-					</div>
-				</div>	
-			</header>
 		</div>	
 		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="center-block text-center"><span id="welcome">Submit your Wish List</span></p>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-1">
 				</div>
 				<div class="col-md-10">
-					<img class="img-fluid avatar center-block" src="img/WREATH_BEAR_SMALL.png">
+					<div class="">
+						<form action="https://formspree.io/xxmikemillaxx@gmail.com" method="POST">
+							<input type="hidden" name="_next" value="christmas-list/next.html"/> <!-- change landing page after form submission -->
+							<div class="form-group">
+							    <label for="your-name">Your Name:</label>
+							    <select class="form-control" id="your-name" name="myName">
+							    	<option>Bob</option>
+							    	<option>Carol</option>
+							    	<option>Dan</option>
+							    	<option>Holly</option>
+							    	<option>Jaimie</option>
+							    	<option>Jamaal</option>
+							    	<option>Josh</option>
+							    	<option>Karli</option>
+							    	<option>Lauren</option>
+							    	<option>Mark</option>
+							    	<option>Michael</option>
+							    	<option>Mike W.</option>
+							    	<option>Mikie</option>
+							    	<option>Pat</option>
+							    </select>
+							</div>
+							<div class="form-group">
+								<label for="wish-list">Your Wish List:</label>
+								<!-- id="submitTextarea" -->
+								<textarea class="form-control" id="html" cols="60" rows="10" placeholder="Input your wish list here." name="myWishlist"></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn-default btn-secondary btn-block submit">Submit</button>
+							</div>
+						</form>
+					</div>
 				</div>
 				<div class="col-md-1">	
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<p class="center-block text-center"><span id="welcome">Submitted.</span></p>
 				</div>
 			</div>
 		</div>
