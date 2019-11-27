@@ -1,7 +1,9 @@
 /******************GENERAL*****************/
 
 body {
-	background-color: #336799;
+	/*background-color: #336799;*/
+	background-color: #000000;
+	color: #ff745e;
 }
 
 .btn-default {
@@ -15,7 +17,7 @@ body {
 #name {
 	font-family: 'Suez One', serif;
 	font-size: 1.5em; 
-	color: #000033;	
+	color: #ff745e;	
 }
 
 .page-header {
@@ -43,23 +45,23 @@ ul.nav {
 /*nav li hover*/
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { 
 	color: #CCFFFF;
-	background-color: #000033;
+	background-color: #ff745e;
 }
 
 /*nav li NO hover*/
 .nav-pills>li>a {
-	color: #000033;
+	color: #ff745e;
 }
 
 /*MJM banner + contact links*/
 a#name:hover {
 	text-decoration: none;
-	color: #CCFFFF;
+	color: #349933;
 }
 
 ul li a.nav-link:hover {
-	color: #000033;
-	background-color: #CCFFFF;
+	color: #ff745e;
+	background-color: #349933;
 	border-radius: 5px;
 }
 
@@ -73,7 +75,8 @@ li.active {
 	font-size: 5.5em;
 	font-family: "Lobster", sans-serif;
 	padding-bottom: 20px;
-	color: #000033;
+	/*color: #ff745e;*/
+	color: #ff745e;
 }
 
 
@@ -81,17 +84,17 @@ li.active {
 	font-size: 3em;
 	font-family: 'Suez One', serif;
 	padding-bottom: 20px;
-	color: #000033;
+	color: #ff745e;
 }
 
 #choice a {
-	color: #000033;
+	color: #ff745e;
 }
 
 .about-me {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 1.65em;
-	color: #000033;
+	color: #ff745e;
 }
 
 
@@ -103,7 +106,7 @@ div.row {
 
 
 .list-tile {
-	border: 5px solid #000033;
+	border: 5px solid #ff745e;
 	/*margin: 2px 2px 2px 2px;*/
 
 }
@@ -116,14 +119,15 @@ table {
 }
 
 tbody tr:hover {
-	background-color: #CCFFFF;
+	/*background-color: #CCFFFF;*/
+	background-color: #349933;
 	font-size: 1.2em;
 	font-weight: bold;
 }
 
 .table td {
 	text-align: center;
-	color: #000033;
+	color: #ff745e;
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 1.5em;
 }
@@ -132,7 +136,7 @@ tbody tr:hover {
 	text-align: center;
 	font-size: 2.4em;
 	font-family: 'Suez One', serif;
-	color: #000033;
+	color: #ff745e;
 }
 
 .submit {
@@ -142,19 +146,19 @@ tbody tr:hover {
 }
 
 .form-control {
-	color: #000033;
+	color: #ff745e;
 }
 
 .list-group-item {
-	color: #000033;
+	color: #ff745e;
 	font-size: 1.4em;
-	border-color: #000033;
+	border-color: #ff745e;
 }
 
 .name-title {
 	font-family: 'Lily Script One', cursive;
 	font-size: 5em;
-	color: #000033;
+	color: #ff745e;
 }
 
 .well {
@@ -162,9 +166,9 @@ tbody tr:hover {
 }
 
 .lgi-no-border {
-	color: #000033;
+	color: #ff745e;
 	font-size: 1.4em;
-	border-color: #000033;
+	border-color: #ff745e;
 	border: none;
 }
 
@@ -173,7 +177,7 @@ tbody tr:hover {
 
 
 .form-group label {
-	color: #000033;
+	color: #ff745e;
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 1.2em;
 }
@@ -185,7 +189,7 @@ tbody tr:hover {
 	margin-bottom: 30px;
 	font-size: 1.2em;
 	font-family: 'Merriweather Sans', sans-serif;
-	color: #000033;
+	color: #ff745e;
 }
 
 a.contact-link {
@@ -193,7 +197,7 @@ a.contact-link {
 }
 
 a.contact-link:hover {
-	color: #000033;
+	color: #ff745e;
 	text-decoration: none;
 }
 
@@ -209,19 +213,24 @@ a.contact-link:hover {
 /******************FOOTER*****************/
 
 div.footer {
-	border-top: 1px solid #CCFFFF;
-	padding-top: 9px;
-	color: #000033;
+	padding-top: 10px;
+	color: #ff745e;
 }
 
 a.footer {
 	text-decoration: none;
-	color: #000033;
+	color: #ff745e;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #CCFFFF;
+	color: #349933;
 }
 
 
+/******************MISC*****************/
+
+
+pre {
+	color: #ff745e;
+}

@@ -28,98 +28,160 @@
   					var SH = $('body').prop("scrollHeight");
   					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
 				});
-	    	});
-	    	
+	    	});	
 	    </script>
+	    <script type="text/javascript">
+			$(document).ready(function(){
+				//scroll to bottom after page load
+				$("img").on("load", function(){ 
+					var WH = $(window).height();  
+  					var SH = $('body').prop("scrollHeight");
+  					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
+				});
+				//lookup list
+				$("#listLookup").click(function(){
+					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
+					$(".hideMe").hide(); //hide garland and shown wishlists
+					$(x).show(); //show hidden div with list
+					$(x).addClass("hideMe"); //tag for destruction (concealment)
+					$('html, body').animate({scrollTop: $(x).offset().top - 15}, 'slow'); //scroll to top of revealed div
+				});
+				//scroll to bottom of page when choice buttom is clicked
+				$("#choice1,#choice2").on("shown.bs.collapse",function(){ 
+					var WH = $(window).height();  
+  					var SH = $('body').prop("scrollHeight");
+  					$('html, body').stop().animate({scrollTop: SH-WH}, 400);
+  					$("#html").markItUp(myHtmlSettings);
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function()	{
+		   		$('#html').markItUp(myHtmlSettings);
+			});
+		</script>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1">
 				</div>
 				<div class="col-md-10">
 					<p class="center-block text-center"><a class="nav-link" href="index.html"><span id="welcome">Christmas 2019</span></a></p>
-					<img class="img-fluid avatar center-block" src="img/WREATH_ORNAMENTS_SMALL.png">
+					<img class="img-fluid" src="img/WREATH_ORNAMENTS_SMALL.png">
 				</div>
 				<div class="col-md-1">	
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<p class="center-block about-me text-center"><a href="submitList.html"><button type="button" class="btn btn-dark btn-outline-primary btn-large"><span id="choice">Submit Your List</span></button><br></a></p>
+					<p class="center-block about-me text-center"><a href="submitList.html"><button type="button" class="btn badge-pill btn-outline-primary btn-large"><span id="choice">Submit Your List</span></button><br></a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+						<pre class="mx-auto">
+								   ;;;;.
+								 ..;;;;;..
+								  ':::::'
+								    ':`
+						</pre>
+					</p>
+<!-- 					------------------------------------------------
+Thank you for visiting https://asciiart.website/
+This ASCII pic can be found at
+https://asciiart.website/index.php?art=objects/arrows -->
 				</div>
 			</div>
 		</div>
 		<div class="container">
+			<p class="center-inline text-center about-me hideMe">Please limit gifts to around $75.</p>
 			<div class="row">
-				<table class="table table-sm">
-					<thead>
-						<tr>
-				    		<th>Gifter</th>
-				    		<th>Giftee</th>
-				   		</tr>
-				  	</thead>
-				  	<tbody>	
-				  		<tr>
-				      		<td>Bob</td>
-				      		<td>Michael M.</td>
-				    	</tr>
-				    	<tr>
-							<td>Carol</td>
-				      		<td>Jaimie</td>				      		
-				    	</tr>
-				    	<tr>
-							<td>Dan</td>
-				      		<td>Carol</td>				      		
-				    	</tr>
-				    	<tr>
-							<td>Holly</td>
-				      		<td>Jamaal</td>				      		
-				    	</tr>
-				    	<tr>
-							<td>Jaimie</td>
-				      		<td>Bob</td>			      		
-				    	</tr>
-				    	<tr>
-							<td>Jamaal</td>
-				      		<td>Mikie</td>				      		
-				    	</tr>
-				    	<tr>
-							<td>Josh</td>
-				      		<td>Dan</td>				      		
-				    	</tr>
-				    	<tr>
-							<td>Karli</td>
-				      		<td>Pat</td>				      		
-				    	</tr>
-				    	<tr>
-							<td>Lauren</td>
-				      		<td>Josh</td>				      		
-				    	</tr>
-				    	<tr>
-							<td>Mark</td>
-				      		<td>Lauren</td>			      		
-				    	</tr>
-				    	<tr>
-				      		<td>Michael M.</td>
-				      		<td>Mark</td>
-				    	</tr>
-				    	<tr>
-							<td>Mike W.</td>
-				      		<td>Holly</td>			      		
-				    	</tr>
-				    	<tr>
-				      		<td>Mikie</td>
-				      		<td>Karli</td>
-				    	</tr>
-				    	<tr>
-				      		<td>Pat</td>
-				      		<td>Mike W.</td>
-				    	</tr>
-				  </tbody>
-				</table>
+				<div class="col-md-6 text-center">
+					<h1>Gifter</h1>
+				</div>
+				<div class="col-md-6 text-center">
+					<h1>Giftee</h1>
+				</div>
+				<div class="col-md-12">
+					<table class="table table-sm">
+						<!-- <thead>
+							<tr>
+					    		<th>Gifter</th>
+					    		<th>Giftee</th>
+					   		</tr>
+					  	</thead> -->
+					  	<tbody>	
+					  		<tr>
+					      		<td>Bob</td>
+					      		<td>Michael M.</td>
+					    	</tr>
+					    	<tr>
+								<td>Carol</td>
+					      		<td>Jaimie</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Dan</td>
+					      		<td>Carol</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Holly</td>
+					      		<td>Jamaal</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Jaimie</td>
+					      		<td>Bob</td>			      		
+					    	</tr>
+					    	<tr>
+								<td>Jamaal</td>
+					      		<td>Mikie</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Josh</td>
+					      		<td>Dan</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Karli</td>
+					      		<td>Pat</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Lauren</td>
+					      		<td>Josh</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Mark</td>
+					      		<td>Lauren</td>			      		
+					    	</tr>
+					    	<tr>
+					      		<td>Michael M.</td>
+					      		<td>Mark</td>
+					    	</tr>
+					    	<tr>
+								<td>Mike W.</td>
+					      		<td>Holly</td>			      		
+					    	</tr>
+					    	<tr>
+					      		<td>Mikie</td>
+					      		<td>Karli</td>
+					    	</tr>
+					    	<tr>
+					      		<td>Pat</td>
+					      		<td>Mike W.</td>
+					    	</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row mx-auto">
+				<div class="col-md-12">
+					<button class="btn badge-pill btn-outline-primary btn-large"><a href="pastLists.html"><p class="text-center about-me hideMe">View lists from previous years</p></a></button>
+				</div>
 			</div>
 			<div class="row">
-				<a href="pastLists.html"><p class="center-inline text-center about-me hideMe">View lists from previous years</p></a>
-			</div>
+				<div class="col-md-12 text-center text-nowrap">
+					<p>-------</p>
+					<p>----</p>
+				</div>
+			</div>			
 		</div>
 		<div class="container">
 			<div class="row hideMe">
@@ -135,7 +197,6 @@
 				<div class="col-md-3">	
 				</div>
 				<div class="col-md-6">
-					<p class="center-inline text-center about-me hideMe">Please limit gifts to around $75.</p>
 					<div hidden class="well" id="Bob">
 						<p class="text-center name-title">Bob</p>
 						<ul class="list-group">
@@ -263,8 +324,8 @@
 				<div class="col-md-4">
 				</div>
 				<div class="col-md-4">
-					<p class="center-block about-me text-center"><button type="button" class="btn-default btn-outline-primary btn-large" data-toggle="collapse" data-target="#choice2"><span id="choice">View</span></button><br> your giftee's wish list</p>
-					<div id="choice2" class="collapse">
+					<p class="center-block about-me text-center">View your giftee's wish list</p>
+					<div>
 						<form>
 							<div class="form-group">
 							    <label for="their-name">Their Name:</label>
