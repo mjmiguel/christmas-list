@@ -21,14 +21,14 @@
 	    <script src="js/bootstrap.min.js"></script>	
 	    <script>
 			$( "#listLookup" ).click(function(){
-		    	var giftee = "#" + $( "#their-list" ).val();
+		    	var giftee = "#" + $( "#their-list option:selected" ).val();
 		    	$( ".hideMe" ).hide(); //hide shown wishlists
 		    	$( giftee ).show();//show hidden div with list
 				$( giftee ).addClass( "hideMe" ); //tag for destruction (concealment)
 			});
 			$( "#listLookup" ).change(function () {
     				var giftee = "";
-    				$( "#listLookup option:selected" ).each(function() {
+    				$( "#their-list option:selected" ).each(function() {
       					giftee += "#" + $( this ).text();
     				});
     				$( ".hideMe" ).hide(); //hide shown wishlists
