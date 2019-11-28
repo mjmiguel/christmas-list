@@ -20,22 +20,13 @@
 			  crossorigin="anonymous"></script>
 	    <script src="js/bootstrap.min.js"></script>	
 	    <script>
-			$( "#listLookup" ).click(function(){
-		    	var giftee = "#" + $( "#their-list option:selected" ).val();
-		    	$( ".hideMe" ).hide(); //hide shown wishlists
-		    	$( giftee ).show();//show hidden div with list
-				$( giftee ).addClass( "hideMe" ); //tag for destruction (concealment)
-			});
-			$( "#listLookup" ).change(function () {
-    				var giftee = "";
-    				$( "#their-list option:selected" ).each(function() {
-      					giftee += "#" + $( this ).text();
-    				});
-    				$( ".hideMe" ).hide(); //hide shown wishlists
-		    		$( giftee ).show();//show hidden div with list
-					$( giftee ).addClass( "hideMe" ); //tag for destruction (concealment)
-  				})
-  				.change();
+		$( "#listLookup" ).click(function(){
+	  //   	var giftee = "#" + $( "#their-list" ).val();
+	  //   	$( ".starthidden" ).hide(); //hide shown wishlists
+	  //   	$( "#Bob" ).show( "fast" );//show hidden div with list
+			// $( "#Bob" ).addClass( ".starthidden" ); //tag for destruction (concealment)
+			$( "#Bob" ).toggle();
+		});
 			// $("#listLookup").click(function(){
 			// 	var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
 			// 	$(".hideMe").hide(); //hide garland and shown wishlists
@@ -163,7 +154,7 @@
 				<div class="col-md-2">
 				</div>
 				<div class="col-md-8 text-center">
-					<p class="center-inline about-me">Please limit gifts to around $75.</p>
+					<p class="center-inline about-me">Please limit gifts to around $100.</p>
 				</div>
 				<div class="col-sm-2">
 				</div>
@@ -172,7 +163,7 @@
 				<div class="col-md-2">
 				</div>
 				<div class="col-md-8 text-center">
-					<button class="btn btn-outline-primary"><a href="pastLists.html"><span id="choice" class="about-me">OLD LISTS</span></a></button>
+					<button class="btn btn-outline-primary"><a href="pastLists.html"><span class="about-me submit">OLD LISTS</span></a></button>
 				</div>
 				<div class="col-sm-2">
 				</div>
@@ -215,10 +206,9 @@
 				<div class="col-md-4">
 					<p class="about-me text-center">View your giftee's wish list</p>
 					<div>
-						<form>
+						<div>
 							<div class="form-group">
-							    <label for="their-name">Their Name:</label>
-							    <select class="form-control" id="their-list">
+							    <select class="custom-select" id="their-list">
 							    	<option>Bob</option>
 							    	<option>Carol</option>
 							    	<option>Dan</option>
@@ -235,10 +225,12 @@
 							    	<option>Pat</option>
 							    </select>
 							</div>
-							<div class="form-group">
-								<button type="button" class="btn-default btn-secondary submit" id="listLookup">Submit</button>
+							<div>
 							</div>
-						</form>
+							<div class="form-group text-center">
+								<button id="listLookup" class="btn btn-outline-primary"><span class="about-me submit">SUBMIT</span></button>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -248,7 +240,7 @@
 				<div class="col-md-3">	
 				</div>
 				<div class="col-md-6">
-					<div hidden class="well" id="Bob">
+					<div class="well starthidden" id="Bob">
 						<p class="text-center name-title">Bob</p>
 						<ul class="list-group">
 							<li class="list-group-item">Has not submitted their list :)</li>

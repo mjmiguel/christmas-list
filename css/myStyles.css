@@ -143,9 +143,11 @@ tbody tr:hover {
 }
 
 .submit {
-	font-family: 'Suez One', serif;
-	font-size: 1.8rem;
-	background-color: #349933;
+	font-size: 2rem;
+	font-family: 'Knewave', cursive;
+	padding-bottom: 20px;
+	color: #ff745e;
+	border-radius: 10px;
 }
 
 .form-control {
@@ -240,9 +242,14 @@ pre {
 	font-size: 1.2rem;
 }
 
+/***hide bottom of gif frame***/
 .iframe__bottom {
 	height: 0;
 	background: #000;
 	border: none;
+}
+
+.starthidden {
+	display: none;
 }
 
