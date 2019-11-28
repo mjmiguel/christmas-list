@@ -102,6 +102,10 @@ div.row {
 	padding-bottom: 20px;
 }
 
+.landing-container {
+	height: 100vh;
+}
+
 /******************Wish List Tiles*******************/
 
 
@@ -214,6 +218,7 @@ a.contact-link:hover {
 div.footer {
 	padding-top: 10px;
 	color: #ff745e;
+	font-size: 0.5rem;
 }
 
 a.footer {
@@ -228,3 +233,16 @@ a:hover {
 
 
 /******************MISC*****************/
+
+pre {
+	color: #ff745e;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.iframe__bottom {
+	height: 0;
+	background: #000;
+	border: none;
+}
+

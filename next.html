@@ -14,21 +14,21 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!-- favicon -->
 	</head>	
 	<body>
-	<script
-			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-			  crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-		//scroll down diff of total document height and viewport height; slows before hitting bottom
-		$(document).ready(function(){
-			$("img").on("load", function(){ 
-				var WH = $(window).height();  
-				var SH = $('body').prop("scrollHeight");
-				$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
-			});
-		});   	
-    </script>
+		<script
+				  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+				  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+				  crossorigin="anonymous"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script>
+			//scroll down diff of total document height and viewport height; slows before hitting bottom
+			$(document).ready(function(){
+				$("img").on("load", function(){ 
+					var WH = $(window).height();  
+					var SH = $('body').prop("scrollHeight");
+					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
+				});
+			});   	
+	    </script>
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">

@@ -20,37 +20,21 @@
 			  crossorigin="anonymous"></script>
 	    <script src="js/bootstrap.min.js"></script>	
 	    <script>
-	    	//scroll down diff of total document height and viewport height; slows before hitting bottom
-			$(document).ready(function(){
-				//scroll to bottom after page load
-				$("img").on("load", function(){ 
-					var WH = $(window).height();  
-  					var SH = $('body').prop("scrollHeight");
-  					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
-				});
-				//lookup list
-				$("#listLookup").click(function(){
-					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
-					$(".hideMe").hide(); //hide garland and shown wishlists
-					$(x).show(); //show hidden div with list
-					$(x).addClass("hideMe"); //tag for destruction (concealment)
-					$('html, body').animate({scrollTop: $(x).offset().top - 15}, 'slow'); //scroll to top of revealed div
-				});
-				//scroll to bottom of page when choice buttom is clicked
-				$("#choice1,#choice2").on("shown.bs.collapse",function(){ 
-					var WH = $(window).height();  
-  					var SH = $('body').prop("scrollHeight");
-  					$('html, body').stop().animate({scrollTop: SH-WH}, 400);
-  					$("#html").markItUp(myHtmlSettings);
-				});
+			$( "#listLookup" ).click(function(){
+		    	var giftee = "#" + $( "#their-list" ).val();
+		    	$( ".hideMe" ).hide(); //hide shown wishlists
+		    	$( giftee ).show();//show hidden div with list
+				$( giftee ).addClass( "hideMe" ); //tag for destruction (concealment)
 			});
+			// $("#listLookup").click(function(){
+			// 	var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
+			// 	$(".hideMe").hide(); //hide garland and shown wishlists
+			// 	$(x).show(); //show hidden div with list
+			// 	$(x).addClass("hideMe"); //tag for destruction (concealment)
+			// 	$('html, body').animate({scrollTop: $(x).offset().top - 15}, 'slow'); //scroll to top of revealed div
+			// });
 		</script>
-		<script type="text/javascript">
-			$(document).ready(function()	{
-		   		$('#html').markItUp(myHtmlSettings);
-			});
-		</script>
-		<div class="container">
+		<div class="container landing-container">
 			<div class="row">
 				<div class="col text-center">
 					<h3><a href="index.html"><span id="welcome">Christmas 2019</span></a></h3>
@@ -71,13 +55,28 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12 text-center text-nowrap">
-					<p>-------</p>
-					<p>----</p>
+				<div class="col">
+				</div>
+				<div class="col text-center text-nowrap">
+					<pre class="text-center">
+  ;;.
+  ;.;;
+  ;;;;.
+  ;;;;;
+  ..;;;;;..
+  ':::::'
+   ':`
+					</pre>
+					<!--------------------------------------------------
+					Thank you for visiting https://asciiart.website/
+					This ASCII pic can be found at
+					https://asciiart.website/index.php?art=objects/arrows -->
+				</div>
+				<div class="col">
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container landing-container">
 			<div class="row">
 				<div class="col text-center">
 					<h1 class="table-header">GIFTER</h1>
@@ -169,13 +168,28 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12 text-center text-nowrap">
-					<p>-------</p>
-					<p>----</p>
+				<div class="col text-center text-nowrap">
+					<pre class="text-center">
+  ;;.
+  ;.;;
+  ;;;;.
+  ;;;;;
+  ..;;;;;..
+  ':::::'
+   ':`
+					</pre>
+					<!--------------------------------------------------
+					Thank you for visiting https://asciiart.website/
+					This ASCII pic can be found at
+					https://asciiart.website/index.php?art=objects/arrows -->
 				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+				</div>	
 			</div>			
 		</div>
-		<div class="container">
+		<div class="container landing-container">
 			<div class="row">
 				<div class="col-md-1">
 				</div>
@@ -183,6 +197,41 @@
 					<img class="img-fluid" src="img/GARLAND_purp_SMALL.png">
 				</div>
 				<div class="col-md-1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<p class="about-me text-center">View your giftee's wish list</p>
+					<div>
+						<form>
+							<div class="form-group">
+							    <label for="their-name">Their Name:</label>
+							    <select class="form-control" id="their-list">
+							    	<option>Bob</option>
+							    	<option>Carol</option>
+							    	<option>Dan</option>
+							    	<option>Holly</option>
+							    	<option>Jaimie</option>
+							    	<option>Jamaal</option>
+							    	<option>Josh</option>
+							    	<option>Karli</option>
+							    	<option>Lauren</option>
+							    	<option>Mark</option>
+							    	<option>Michael</option>
+							    	<option>Mike W</option>
+							    	<option>Mikie</option>
+							    	<option>Pat</option>
+							    </select>
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn-default btn-secondary submit" id="listLookup">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4">
 				</div>
 			</div>
 			<div class="row">
@@ -310,41 +359,6 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
-					<p class="about-me text-center">View your giftee's wish list</p>
-					<div>
-						<form>
-							<div class="form-group">
-							    <label for="their-name">Their Name:</label>
-							    <select class="form-control" id="their-list">
-							    	<option>Bob</option>
-							    	<option>Carol</option>
-							    	<option>Dan</option>
-							    	<option>Holly</option>
-							    	<option>Jaimie</option>
-							    	<option>Jamaal</option>
-							    	<option>Josh</option>
-							    	<option>Karli</option>
-							    	<option>Lauren</option>
-							    	<option>Mark</option>
-							    	<option>Michael</option>
-							    	<option>Mike W</option>
-							    	<option>Mikie</option>
-							    	<option>Pat</option>
-							    </select>
-							</div>
-							<div class="form-group">
-								<button type="button" class="btn-default btn-secondary btn-block submit" id="listLookup">Submit</button>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="col-md-4">
 				</div>
 			</div>
 		</div>
