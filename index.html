@@ -26,6 +26,16 @@
 		    	$( giftee ).show();//show hidden div with list
 				$( giftee ).addClass( "hideMe" ); //tag for destruction (concealment)
 			});
+			$( "#listLookup" ).change(function () {
+    				var giftee = "";
+    				$( "#listLookup option:selected" ).each(function() {
+      					giftee += "#" + $( this ).text();
+    				});
+    				$( ".hideMe" ).hide(); //hide shown wishlists
+		    		$( giftee ).show();//show hidden div with list
+					$( giftee ).addClass( "hideMe" ); //tag for destruction (concealment)
+  				})
+  				.change();
 			// $("#listLookup").click(function(){
 			// 	var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
 			// 	$(".hideMe").hide(); //hide garland and shown wishlists
