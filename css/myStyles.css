@@ -77,16 +77,6 @@ li.active {
 	color: #ff745e;
 }
 
-
-#choice {
-	font-size: 2rem;
-	/*font-family: 'Suez One', serif;*/
-	font-family: 'Knewave', cursive;
-	padding-bottom: 20px;
-	color: #ff745e;
-	border-radius: 10px;
-}
-
 #choice a {
 	color: #ff745e;
 }
@@ -145,7 +135,6 @@ tbody tr:hover {
 .submit {
 	font-size: 2rem;
 	font-family: 'Knewave', cursive;
-	padding-bottom: 20px;
 	color: #ff745e;
 	border-radius: 10px;
 }
