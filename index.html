@@ -20,6 +20,17 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>	
 	<body>
+		<script type="text/javascript">
+			//attempt to fix 100vh on mobile
+			function resetHeight(){
+    		// reset the body height to that of the inner browser
+    			document.body.style.height = window.innerHeight + "px";
+			}
+			// reset the height whenever the window's resized
+			window.addEventListener("resize", resetHeight);
+			// called to initially set the height.
+			resetHeight();
+		</script>
 	    <script type="text/javascript">
 	    	$(document).ready(function(){
 				$("#listLookup").click(function(){
