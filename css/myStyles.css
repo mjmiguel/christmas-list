@@ -26,8 +26,9 @@ body {
 /******************HOME CONTENT*****************/
 
 #welcome {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-family: 'Monoton', cursive;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	color: #ff745e;
 }
