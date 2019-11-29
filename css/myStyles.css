@@ -11,15 +11,7 @@ body {
 	border-color: none;
 }
 
-
-
 /******************HEADER*****************/
-
-#name {
-	font-family: 'Suez One', serif;
-	font-size: 1.5rem;
-	color: #ff745e;	
-}
 
 .page-header {
 	/*border-bottom-color: #CCFFFF;*/
@@ -29,41 +21,6 @@ body {
 .h1, .h2, .h3, h1, h2, h3 {
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-/******************NAV LINKS**************/
-
-
-ul.nav {
-	font-family: 'Suez One', serif;
-	font-size: 1.5rem;
-}
-
-/*nav li hover*/
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { 
-	color: #CCFFFF;
-	background-color: #ff745e;
-}
-
-/*nav li NO hover*/
-.nav-pills>li>a {
-	color: #ff745e;
-}
-
-/*MJM banner + contact links*/
-a#name:hover {
-	text-decoration: none;
-	color: #349933;
-}
-
-a.nav-link:hover {
-	color: #ff745e;
-	background-color: #349933;
-	border-radius: 5px;
-}
-
-li.active {
-	color: #CCFFFF;
 }
 
 /******************HOME CONTENT*****************/
@@ -137,8 +94,12 @@ tbody tr:hover {
 	border-radius: 10px;
 }
 
+/***for form submission text area***/
 .form-control {
 	color: #ff745e;
+	background-color: #000 !important;
+	border: 1px solid #ff745e;
+	font-size: 2.0rem;
 }
 
 .list-group-item {
@@ -151,10 +112,6 @@ tbody tr:hover {
 	font-family: 'Bungee Inline', cursive;
 	font-size: 5rem;
 	color: #ff745e;
-}
-
-.well {
-	padding: 15px;
 }
 
 .lgi-no-border {
@@ -193,14 +150,6 @@ a.contact-link:hover {
 	text-decoration: none;
 }
 
-
-
-/******************AVATAR*****************/
-
-.avatar {
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
 
 /******************FOOTER*****************/
 
@@ -258,6 +207,7 @@ pre {
   animation-name: arrow-down;
   animation-duration: 4s;  
   animation-delay: 2s;
+  animation-iteration-count: 3;
   animation-fill-mode: backwards;
 }
 
@@ -272,10 +222,6 @@ pre {
   to {top: 175px;}
 }
 
-
-/*****text area background*****/
-
-textarea {
-    background-color:#000;
-    color: #ff745e;
+.form-group label {
+	font-size: 1.75rem;
 }
