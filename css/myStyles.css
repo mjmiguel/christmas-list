@@ -231,17 +231,18 @@ pre {
 	font-size: 1.2rem;
 }
 
-/***hide bottom of gif frame***/
+/*/***hide bottom of gif frame***/
 .iframe__bottom {
 	height: 0;
 	background: #000;
 	border: none;
-}
+}*/
 
 .starthidden {
 	display: none;
 }
 
+/****down arrrow animation****/
 #arrow-down {
   width: 100px;
   height: 100px;
@@ -255,6 +256,8 @@ pre {
   animation-duration: 3s;  
   animation-delay: 2s;
   animation-fill-mode: both;
+
+
 }
 
 /* Safari 4.0 - 8.0 */
@@ -266,4 +269,22 @@ pre {
 @keyframes arrow-down {
   from {top: 0px;}
   to {top: 175px;}
+}
+
+
+/*****text area background*****/
+
+textarea {
+    background-color:#000;
+    color: #ff745e;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #ff745e;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
 }
