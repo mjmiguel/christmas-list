@@ -33,6 +33,11 @@ body {
 	color: #ff745e;
 }
 
+#welcome:hover {
+	color: #C45EFF;
+	text-decoration: none;
+}
+
 #choice a {
 	color: #ff745e;
 }
