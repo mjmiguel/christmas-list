@@ -242,3 +242,28 @@ pre {
 	display: none;
 }
 
+#arrow-down {
+  width: 100px;
+  height: 100px;
+  background: none;
+  position: relative;
+  -webkit-animation-name: arrow-down;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */  
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+  animation-name: arrow-down;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes arrow-down {
+  from {top: 0px;}
+  to {top: 175px;}
+}
+
+@keyframes arrow-down {
+  from {top: 0px;}
+  to {top: 175px;}
+}
