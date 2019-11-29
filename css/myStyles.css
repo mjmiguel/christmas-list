@@ -11,6 +11,8 @@ body {
 	border-color: none;
 }
 
+
+
 /******************HEADER*****************/
 
 #name {
@@ -183,11 +185,11 @@ tbody tr:hover {
 }
 
 a.contact-link {
-	color: #CCFFFF;
+	color: #5EE9FF;
 }
 
 a.contact-link:hover {
-	color: #ff745e;
+	color: #C45EFF;
 	text-decoration: none;
 }
 
