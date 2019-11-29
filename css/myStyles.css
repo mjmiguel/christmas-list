@@ -216,13 +216,13 @@ pre {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes arrow-down {
-  from {top: 0px; color: #000;}
-  to {top: 175px; color: #ff745e;}
+  from {top: 0px;}
+  to {top: 100px;}
 }
 
 @keyframes arrow-down {
   from {top: 0px;}
-  to {top: 175px;}
+  to {top: 100px;}
 }
 
 .form-group label {
