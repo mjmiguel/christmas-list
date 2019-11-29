@@ -1,67 +1,62 @@
-<!-- I'm always looking to improve. Let me know if you have any suggestions :) -->
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>MJM</title>
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/Normalize.css" rel="stylesheet">
+  		<!-- Required meta tags -->
+   		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>24/7 xmas madness</title>
+		<!-- bootstrap CDN -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link href="css/myStyles.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet'>
-		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-		<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">	
-		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!-- favicon -->
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet"> 
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>	
 	<body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-		//scroll down diff of total document height and viewport height; slows before hitting bottom
-		$(document).ready(function(){
-			$("img").on("load", function(){ 
-				var WH = $(window).height();  
-				var SH = $('body').prop("scrollHeight");
-				$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
-			});
-		});   	
-    </script>
+	    <script>
+			//scroll down diff of total document height and viewport height; slows before hitting bottom
+			$(document).ready(function(){
+				$("img").on("load", function(){ 
+					var WH = $(window).height();  
+					var SH = $('body').prop("scrollHeight");
+					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
+				});
+			});   	
+	    </script>
 		<div class="container">
-			<header class="page-header">
-				<div class="row">
-					<div class="col-md-6">
-						<h3 class="h3 text-left"><a href="index.html" id="name">CHRISTMAS 2018</a></h3>
-					</div>
-					<div class="col-md-6">
-						<ul class="nav nav-pills pull-right">
-							<li><a class="nav-link" href="santaList.html">THE LIST</a></li>
-							<li><a class="nav-link" href="wishList.html"> ASK SANTA</a></li>
-						</ul>
-					</div>
+			<div class="row">
+				<div class="col text-center">
+					<p class="center-block"><a class="nav-link" href="index.html"><span id="welcome">Christmas 2019</span></a></p>
 				</div>	
-			</header>
+			</div>
 		</div>	
 		<div class="container">
 			<div class="row">
-				<div class="col-md-1">
+				<div class="col-md-4">
 				</div>
-				<div class="col-md-10">
-					<img class="img-responsive avatar center-block" src="img/WREATH_BEAR.png">
+				<div class="col-md-4 text-center">
+					<img class="img-fluid" src="img/WREATH_BEAR_SMALL.png">
 				</div>
-				<div class="col-md-1">	
+				<div class="col-md-4">	
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
-					<p class="center-block text-center"><span id="welcome">Submitted.</span></p>
+				<div class="col-md-12 text-center">
+					<p><span id="welcome">Your list has been submitted.</span></p>
+					<p><span>Michael has been notified and will add your list to the site.</span></p>
 				</div>
 			</div>
 		</div>
 		<footer>
       		<div class="container footer">
-        		<p>&copy; MJM 2018<a class="pull-right" href="about.html">ABOUT</a></p>
+        		<p>&copy; MJM 2019<a class="pull-right" href="about.html">ABOUT</a></p>
       		</div>
     	</footer>
 	</body>

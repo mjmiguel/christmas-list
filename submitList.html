@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+	<head>
+  		<!-- Required meta tags -->
+   		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>24/7 xmas madness</title>
+		<!-- bootstrap CDN -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link href="css/myStyles.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!-- favicon -->
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet"> 
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>	
+	<body>
+    <script>
+		//scroll down diff of total document height and viewport height; slows before hitting bottom
+		$(document).ready(function(){
+			$("img").on("load", function(){ 
+				var WH = $(window).height();  
+				var SH = $('body').prop("scrollHeight");
+				$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
+			});
+		});   	
+    </script>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h3><a href="index.html"><span id="welcome">Christmas 2019</span></a></h3>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col">
+				</div>	
+			</div>
+		</div>	
+		<div class="container landing-container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2><span>Submit your Wish List</span></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-10">
+					<div class="">
+						<form action="https://formspree.io/xledgoqp" method="POST">
+							<input type="hidden" name="_next" value="christmas-list/next.html"/> <!-- change landing page after form submission -->
+							<div class="form-group">
+							    <label for="your-name">Your Name:</label>
+							    <select class="form-control" id="your-name" name="myName">
+							    	<option>Bob</option>
+							    	<option>Carol</option>
+							    	<option>Dan</option>
+							    	<option>Holly</option>
+							    	<option>Jaimie</option>
+							    	<option>Jamaal</option>
+							    	<option>Josh</option>
+							    	<option>Karli</option>
+							    	<option>Lauren</option>
+							    	<option>Mark</option>
+							    	<option>Michael</option>
+							    	<option>Mike W.</option>
+							    	<option>Mikie</option>
+							    	<option>Pat</option>
+							    </select>
+							</div>
+							<div class="form-group">
+								<label for="wish-list">Your Wish List:</label>
+								<!-- id="submitTextarea" -->
+								<textarea class="form-control" id="html" cols="60" rows="10" placeholder="Type here. I'll make it look nice." name="myWishlist"></textarea>
+							</div>
+							<div class="form-group text-center">
+								<button type="submit" class="btn btn-outline-primary submit">SUBMIT</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-1">	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+				</div>
+			</div>
+		</div>
+		<footer>
+      		<div class="container footer">
+        		<p>&copy; MJM 2019<a class="pull-right" href="about.html">ABOUT</a></p>
+      		</div>
+    	</footer>
+	</body>
+</html>

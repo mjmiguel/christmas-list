@@ -1,22 +1,17 @@
 /******************GENERAL*****************/
 
 body {
-	background-color: #336799;
+	background-color: #000000;
+	color: #ff745e;
 }
 
-.btn-default {
-	font-size: 0.9em;
+.btn-outline-primary {
+	font-size: 0.9rem;
 	border-radius: 5px;
 	border-color: none;
 }
 
 /******************HEADER*****************/
-
-#name {
-	font-family: 'Suez One', serif;
-	font-size: 1.5em; 
-	color: #000033;	
-}
 
 .page-header {
 	/*border-bottom-color: #CCFFFF;*/
@@ -28,70 +23,23 @@ body {
 	margin-bottom: 10px;
 }
 
-/******************NAV LINKS**************/
-
-.testrow {
-	border-width: 5px;
-	border-color: #000000;
-}
-
-ul.nav {
-	font-family: 'Suez One', serif;
-	font-size: 1.5em;
-}
-
-/*nav li hover*/
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { 
-	color: #CCFFFF;
-	background-color: #000033;
-}
-
-/*nav li NO hover*/
-.nav-pills>li>a {
-	color: #000033;
-}
-
-/*MJM banner + contact links*/
-a#name:hover {
-	text-decoration: none;
-	color: #CCFFFF;
-}
-
-ul li a.nav-link:hover {
-	color: #000033;
-	background-color: #CCFFFF;
-	border-radius: 5px;
-}
-
-li.active {
-	color: #CCFFFF;
-}
-
 /******************HOME CONTENT*****************/
 
 #welcome {
-	font-size: 5.5em;
-	font-family: "Lobster", sans-serif;
-	padding-bottom: 20px;
-	color: #000033;
-}
-
-
-#choice {
-	font-size: 3em;
-	font-family: 'Suez One', serif;
-	padding-bottom: 20px;
-	color: #000033;
+	font-size: 2.5rem;
+	font-family: 'Monoton', cursive;
+	padding-bottom: 10px;
+	color: #ff745e;
 }
 
 #choice a {
-	color: #000033;
+	color: #ff745e;
 }
 
 .about-me {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 1.65em;
-	color: #000033;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 1.65rem;
+	color: #ff745e;
 }
 
 
@@ -99,11 +47,15 @@ div.row {
 	padding-bottom: 20px;
 }
 
+.landing-container {
+	height: 100vh;
+}
+
 /******************Wish List Tiles*******************/
 
 
 .list-tile {
-	border: 5px solid #000033;
+	border: 5px solid #ff745e;
 	/*margin: 2px 2px 2px 2px;*/
 
 }
@@ -116,55 +68,57 @@ table {
 }
 
 tbody tr:hover {
-	background-color: #CCFFFF;
-	font-size: 1.2em;
+	background-color: #006600;
+	font-size: 8.0rem;
 	font-weight: bold;
 }
 
 .table td {
 	text-align: center;
-	color: #000033;
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 1.5em;
+	color: #ff745e;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 1.5rem;
 }
 
-.table th {
+.table-header {
 	text-align: center;
-	font-size: 2.4em;
-	font-family: 'Suez One', serif;
-	color: #000033;
+	font-size: 2.4rem;
+	font-family: 'Knewave', cursive;
+	color: #ff745e;
 }
 
 .submit {
-	font-family: 'Suez One', serif;
-	font-size: 1.8em; 
-	background-color: #CCFFFF;
+	font-size: 2rem;
+	font-family: 'Knewave', cursive;
+	color: #ff745e;
+	border-radius: 10px;
 }
 
+/***for form submission text area***/
 .form-control {
-	color: #000033;
+	color: #ff745e !important;
+	background-color: #000 !important;
+	border: 1px solid #ff745e;
+	font-size: 2.0rem;
 }
+
 
 .list-group-item {
-	color: #000033;
-	font-size: 1.4em;
-	border-color: #000033;
+	color: #ff745e;
+	font-size: 1.4rem;
+	border-color: #ff745e;
 }
 
 .name-title {
-	font-family: 'Lily Script One', cursive;
-	font-size: 5em;
-	color: #000033;
-}
-
-.well {
-	padding: 15px;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 5rem;
+	color: #ff745e;
 }
 
 .lgi-no-border {
-	color: #000033;
-	font-size: 1.4em;
-	border-color: #000033;
+	color: #ff745e;
+	font-size: 1.4rem;
+	border-color: #ff745e;
 	border: none;
 }
 
@@ -173,9 +127,9 @@ tbody tr:hover {
 
 
 .form-group label {
-	color: #000033;
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 1.2em;
+	color: #ff745e;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 1.2rem;
 }
 
 /******************CONTACT CONTENT*****************/
@@ -183,45 +137,92 @@ tbody tr:hover {
 .col-md-12.text-center {
 	margin-top: 10px;
 	margin-bottom: 30px;
-	font-size: 1.2em;
-	font-family: 'Merriweather Sans', sans-serif;
-	color: #000033;
+	font-size: 1.2rem;
+	font-family: 'Averia Serif Libre', cursive;
+	color: #ff745e;
 }
 
 a.contact-link {
-	color: #CCFFFF;
+	color: #5EE9FF;
 }
 
 a.contact-link:hover {
-	color: #000033;
+	color: #C45EFF;
 	text-decoration: none;
 }
 
-
-
-/******************AVATAR*****************/
-
-.avatar {
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
 
 /******************FOOTER*****************/
 
 div.footer {
-	border-top: 1px solid #CCFFFF;
-	padding-top: 9px;
-	color: #000033;
+	padding-top: 10px;
+	color: #ff745e;
+	font-size: 0.5rem;
 }
 
 a.footer {
 	text-decoration: none;
-	color: #000033;
+	color: #1a0c09;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #CCFFFF;
+	color: #349933;
 }
 
 
+/******************MISC*****************/
+
+pre {
+	color: #ff745e;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+/****hidden List cards****/
+.hideMe {
+	display: none;
+}
+
+/****list cards****/
+.card, .list-group-item {
+	background-color: #000;
+	border-radius: 5px;
+	border: 2px solid #ff745e;
+}
+
+.card-content {
+	font-family: 'Averia Serif Libre', cursive;
+}
+
+/****down arrrow animation****/
+#arrow-down {
+  width: 100px;
+  height: 100px;
+  background: none;
+  position: relative;
+  -webkit-animation-name: arrow-down;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */  
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
+  animation-name: arrow-down;
+  animation-duration: 4s;  
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-fill-mode: backwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes arrow-down {
+  from {top: 0px;}
+  to {top: 175px;}
+}
+
+@keyframes arrow-down {
+  from {top: 0px;}
+  to {top: 175px;}
+}
+
+.form-group label {
+	font-size: 1.75rem;
+}

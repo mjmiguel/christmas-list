@@ -1,57 +1,372 @@
-<!-- I heard nick uses spaces instead of tab. Yikes. -->
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<!-- Required meta tags -->
+   		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>24/7 xmas madness</title>
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/Normalize.css" rel="stylesheet">
+		<!-- bootstrap CDN -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link href="css/myStyles.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet'>
-		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-		<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">	
-		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!-- favicon -->
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet"> 
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>	
 	<body>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>	
-	    <script>
-	    	//scroll down diff of total document height and viewport height; slows before hitting bottom
+	    <script type="text/javascript">
 	    	$(document).ready(function(){
-	    		$("img").on("load", function(){ 
-					var WH = $(window).height();  
-  					var SH = $('body').prop("scrollHeight");
-  					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
+				$("#listLookup").click(function(){
+					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
+					$(".hideMe").hide(); //hide garland and shown wishlists
+					$(x).show(); //show hidden div with list
+					$(x).addClass("hideMe"); //tag for destruction (concealment)
+					$('html, body').animate({scrollTop: $(x).offset().top - 15}, 'slow'); //scroll to top of revealed div
 				});
-	    	});
-	    	
-	    </script>
-		<div class="container">
+			});
+		</script>
+		<div class="container landing-container">
+			<div class="row">
+				<div class="col text-center">
+					<h3><a href="index.html"><span id="welcome">Christmas 2019</span></a></h3>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8 text-center">
+					<img class="img-fluid" src="img/WREATH_ORNAMENTS_SMALL.png">
+				</div>
+				<div class="col-md-2">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center">
+					<a href="submitList.html"><button type="button" class="btn btn-outline-primary submit">SUBMIT YOUR LIST</button></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+				</div>
+				<div id="arrow-down" class="col text-center text-nowrap">
+					<pre class="text-center">
+  ;;.
+  ;.;;
+  ;;;;.
+  ;;;;;
+  ..;;;;;..
+  ':::::'
+   ':`
+					</pre>
+					<!--------------------------------------------------
+					Thank you for visiting https://asciiart.website/
+					This ASCII pic can be found at
+					https://asciiart.website/index.php?art=objects/arrows -->
+				</div>
+				<div class="col">
+				</div>
+			</div>
+		</div>
+		<div class="container landing-container">
+			<div class="row">
+				<div class="col text-center">
+					<h1 class="table-header">GIFTER</h1>
+				</div>
+				<div class="col text-center">
+					<h1 class="table-header">GIFTEE</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<table class="table table-sm">
+					  	<tbody>	
+					  		<tr>
+					      		<td>Bob</td>
+					      		<td>Michael M.</td>
+					    	</tr>
+					    	<tr>
+								<td>Carol</td>
+					      		<td>Holly</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Dan</td>
+					      		<td>Jaimie</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Holly</td>
+					      		<td>Josh</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Jaimie</td>
+					      		<td>Jamaal</td>			      		
+					    	</tr>
+					    	<tr>
+								<td>Jamaal</td>
+					      		<td>Mikie</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Josh</td>
+					      		<td>Mike W.</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Karli</td>
+					      		<td>Lauren</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Lauren</td>
+					      		<td>Carol</td>				      		
+					    	</tr>
+					    	<tr>
+								<td>Mark</td>
+					      		<td>Pat</td>			      		
+					    	</tr>
+					    	<tr>
+					      		<td>Michael M.</td>
+					      		<td>Bob</td>
+					    	</tr>
+					    	<tr>
+								<td>Mike W.</td>
+					      		<td>Dan</td>			      		
+					    	</tr>
+					    	<tr>
+					      		<td>Mikie</td>
+					      		<td>Karli</td>
+					    	</tr>
+					    	<tr>
+					      		<td>Pat</td>
+					      		<td>Mark</td>
+					    	</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8 text-center">
+					<p class="center-inline about-me">Please limit gifts to around $100.</p>
+				</div>
+				<div class="col-sm-2">
+				</div>
+			</div>
+			<!-- <div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8 text-center">
+					<button class="btn btn-outline-primary"><a href="pastLists.html"><span class="about-me submit">OLD LISTS</span></a></button>
+				</div>
+				<div class="col-sm-2">
+				</div>
+			</div> -->
+			<div class="row">
+				<div id="arrow-down" class="col text-center text-nowrap">
+					<pre class="text-center">
+  ;;.
+  ;.;;
+  ;;;;.
+  ;;;;;
+  ..;;;;;..
+  ':::::'
+   ':`
+					</pre>
+					<!--------------------------------------------------
+					Thank you for visiting https://asciiart.website/
+					This ASCII pic can be found at
+					https://asciiart.website/index.php?art=objects/arrows -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+				</div>	
+			</div>			
+		</div>
+		<div class="container landing-container">
 			<div class="row">
 				<div class="col-md-1">
 				</div>
 				<div class="col-md-10">
-					<img class="img-responsive avatar center-block" src="img/WREATH_ORNAMENTS.png">
-					<p class="center-block text-center"><span id="welcome">Christmas 2018</span></p>
+					<img class="img-fluid" src="img/GARLAND_purp_SMALL.png">
 				</div>
-				<div class="col-md-1">	
+				<div class="col-md-1">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
-					<p class="center-block about-me text-center"><a href="santaList.html"><button type="button" class="btn-default btn-outline-primary btn-large"><span id="choice">Find</span></button><br></a> your giftee</p>
+				<div class="col-md-4">
 				</div>
-				<div class="col-md-6">
-					<p class="center-block about-me text-center"><a href="wishList.html"><button type="button" class="btn-default btn-outline-primary btn-large"><span id="choice">Post&View</span></button><br></a> the lists</p>
+				<div class="col-md-4">
+					<p class="about-me text-center">View your giftee's wish list</p>
+					<div>
+						<div>
+							<div class="form-group">
+							    <select class="form-control" id="their-list">
+							    	<option>Bob</option>
+							    	<option>Carol</option>
+							    	<option>Dan</option>
+							    	<option>Holly</option>
+							    	<option>Jaimie</option>
+							    	<option>Jamaal</option>
+							    	<option>Josh</option>
+							    	<option>Karli</option>
+							    	<option>Lauren</option>
+							    	<option>Mark</option>
+							    	<option>Michael</option>
+							    	<option>Mike W</option>
+							    	<option>Mikie</option>
+							    	<option>Pat</option>
+							    </select>
+							</div>
+							<div>
+							</div>
+							<div class="form-group text-center">
+								<button id="listLookup" class="btn btn-outline-primary"><span class="about-me submit">VIEW</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">	
+				</div>
+				<div class="col-md-8">
+					<!-- USE CONTACT-LINK CLASS on "a" ELEMENTS FOR LINKS
+					USE LGI CLASS FOR LIST GROUP ELEMENTS	 -->				
+					<div class="card hideMe" id="Bob">
+						<div class="card-content">
+							<p class="text-center name-title">Bob</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Carol">
+						<div class="card-content">
+							<p class="text-center name-title">Carol</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Dan">
+						<div class="card-content">
+							<p class="text-center name-title">Dan</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Holly">
+						<div class="card-content">
+							<p class="text-center name-title">Holly</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Jaimie">
+						<div class="card-content">
+							<p class="text-center name-title">Jaimie</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Jamaal">
+						<div class="card-content">
+							<p class="text-center name-title">Jamaal</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Josh">
+						<div class="card-content">
+							<p class="text-center name-title">Josh</p>
+								<!-- 						<p class="text-left lgi-no-border">In this season of giving, please find some way to help those who need it more than me, either with your time or financial support. Here are some card rated charities in the San Luis area. Please give whatever you feel is appropriate. Making the world a better place is the best gift you could possibly give me.</p>
+								<ul class="list-group">
+								<li class="list-group-item"><span class="text-center" style="font-weight: bold;">Food Bank Coalition of San Luis Obispo County</span><br>End hunger in SLO county!<br><a href="https://www.slofoodbank.org/donate.php">https://www.slofoodbank.org/donate.php</a></li>
+								<li class="list-group-item"><span class="text-center" style="font-weight: bold;">Family Care Network</span><br>Helps kids affected by trauma<br><a href="https://donate.fcni.org/donation-form">https://donate.fcni.org/donation-form</a></li>
+								<li class="list-group-item"><span class="text-center" style="font-weight: bold;">Woods Humane Society</span><br>Meow meow bark bark<br><a href="http://www.woodshumanesociety.org/donate/">http://www.woodshumanesociety.org/donate/</a></li>
+								<li class="list-group-item"><span class="text-center" style="font-weight: bold;">The Seattle Public Library</span> has the Freshstart program so teens with outstanding fines can get their debts forgiven and get access to library materials<br><a href="
+								http://i.supportspl.org/freshstart">http://i.supportspl.org/freshstart</a></li>
+							</ul>
+							<p class="text-center lgi-no-border">Or if you have a charity you like a lot, tell me about the work they do. I'd love to hear about it!</p> -->
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card hideMe" id="Karli">
+						<div class="card-content">
+							<p class="text-center name-title">Karli</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Lauren">
+						<div class="card-content">
+							<p class="text-center name-title">Lauren</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Mark">
+						<div class="card-content">
+							<p class="text-center name-title">Mark</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Michael">
+						<div class="card-content">
+							<p class="text-center name-title">Michael M.</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="MikeW">
+						<div class="card-content">
+							<p class="text-center name-title">Mike W.</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Mikie">
+						<div class="card-content">
+							<p class="text-center name-title">Mikie</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="card hideMe" id="Pat">
+						<div class="card-content">
+							<p class="text-center name-title">Pat</p>
+							<ul class="list-group text-center">
+								<li class="list-group-item">Has not submitted their list :)</li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-2">
 				</div>
 			</div>
 		</div>
 		<footer>
       		<div class="container footer">
-        		<p>&copy; MJM 2018<a class="pull-right" href="about.html">ABOUT</a></p>
+        		<p>&copy; MJM 2019 <a class="pull-right footer" href="about.html">ABOUT</a></p>
       		</div>
     	</footer>
 	</body>
