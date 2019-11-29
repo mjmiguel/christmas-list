@@ -202,20 +202,20 @@ pre {
   background: none;
   position: relative;
   -webkit-animation-name: arrow-down;  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */  
+  -webkit-animation-duration: 4s;  /* Safari 4.0 - 8.0 */  
   -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: alternate; /* Safari 4.0 - 8.0 */
   animation-name: arrow-down;
   animation-duration: 4s;  
   animation-delay: 2s;
-  animation-iteration-count: 3;
-  animation-fill-mode: backwards;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes arrow-down {
-  from {top: 0px;}
-  to {top: 175px;}
+  from {top: 0px; color: #000;}
+  to {top: 175px; color: #ff745e;}
 }
 
 @keyframes arrow-down {
