@@ -31,10 +31,6 @@ body {
 
 /******************NAV LINKS**************/
 
-.testrow {
-	border-width: 5px;
-	border-color: #000000;
-}
 
 ul.nav {
 	font-family: 'Suez One', serif;
@@ -150,7 +146,7 @@ tbody tr:hover {
 }
 
 .name-title {
-	font-family: 'Lily Script One', cursive;
+	font-family: 'Bungee Inline', cursive;
 	font-size: 5rem;
 	color: #ff745e;
 }
@@ -231,15 +227,20 @@ pre {
 	font-size: 1.2rem;
 }
 
-/*/***hide bottom of gif frame***/
-.iframe__bottom {
-	height: 0;
-	background: #000;
-	border: none;
-}*/
-
-.starthidden {
+/****hidden List cards****/
+.hideMe {
 	display: none;
+}
+
+/****list cards****/
+.card, .list-group-item {
+	background-color: #000;
+	border-radius: 5px;
+	border: 2px solid #ff745e;
+}
+
+.card-content {
+	font-family: 'Averia Serif Libre', cursive;
 }
 
 /****down arrrow animation****/
@@ -251,13 +252,11 @@ pre {
   -webkit-animation-name: arrow-down;  /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */  
   -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
   animation-name: arrow-down;
-  animation-duration: 3s;  
+  animation-duration: 4s;  
   animation-delay: 2s;
-  animation-fill-mode: both;
-
-
+  animation-fill-mode: backwards;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -277,14 +276,4 @@ pre {
 textarea {
     background-color:#000;
     color: #ff745e;
-}
-
-::-moz-selection { /* Code for Firefox */
-  color: #ff745e;
-  background: yellow;
-}
-
-::selection {
-  color: red;
-  background: yellow;
 }

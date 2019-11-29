@@ -6,37 +6,22 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>24/7 xmas madness</title>
 		<!-- bootstrap CDN -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link href="css/myStyles.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!-- favicon -->
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet"> 
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>	
 	<body>
-		<script type="text/javascript" src="markitup/jquery.markitup.js"></script>
-		<script type="text/javascript" src="markitup/sets/html/set.js"></script>
-		<script
-			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-			  crossorigin="anonymous"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				//scroll to bottom after page load
-				$("img").on("load", function(){ 
-					var WH = $(window).height();  
-  					var SH = $('body').prop("scrollHeight");
-  					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
-				});
-				//lookup list
-				$("#listLookup").click(function(){
-					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id
-					$(".hideMe").hide(); //hide garland and shown wishlists
-					$(x).show(); //show hidden div with list
-					$(x).addClass("hideMe"); //tag for destruction (concealment)
-					$('html, body').animate({scrollTop: $(x).offset().top - 15}, 'slow'); //scroll to top of revealed div
-				});
 				//scroll to bottom of page when choice buttom is clicked
 				$("#choice1,#choice2").on("shown.bs.collapse",function(){ 
 					var WH = $(window).height();  
