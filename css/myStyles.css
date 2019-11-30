@@ -184,6 +184,7 @@ pre {
 	color: #ff745e;
 	font-weight: bold;
 	font-size: 1.2rem;
+	overflow-x: hidden;
 }
 
 /****hidden List cards****/
@@ -211,11 +212,11 @@ pre {
   -webkit-animation-name: arrow-down;  /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s;  /* Safari 4.0 - 8.0 */  
   -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-fill-mode: alternate; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
   animation-name: arrow-down;
   animation-duration: 4s;  
   animation-delay: 2s;
-  animation-direction: alternate;
+  animation-direction: backwards;
   animation-iteration-count: 1;
 }
 
