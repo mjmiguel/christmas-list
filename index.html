@@ -20,20 +20,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>	
 	<body>
-		<script type="text/javascript">
-			//attempt to fix 100vh issue on mobile/other browsers
-			// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-			let vh = window.innerHeight * 0.01;
-			// Then we set the value in the --vh custom property to the root of the document
-			document.documentElement.style.setProperty('--vh', `${vh}px`);
-			// We listen to the resize event (to resize element after element changes size)
-			window.addEventListener('resize', () => {
-  				// We execute the same script as before
-  				let vh = window.innerHeight * 0.01;
-  				document.documentElement.style.setProperty('--vh', `${vh}px`);
-			});
-		</script>
 	    <script type="text/javascript">
+	    	//find and reveal christmas list cards
 	    	$(document).ready(function(){
 				$("#listLookup").click(function(){
 					var x = "#" + $("#their-list option:selected").text().replace(/\s/g,""); //giftee's name as div id

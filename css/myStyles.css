@@ -1,4 +1,8 @@
 /******************GENERAL*****************/
+/****100vh effect across all devices****/
+html, body {
+	height: 100%;
+}
 
 body {
 	background-color: #000000;
@@ -54,9 +58,7 @@ div.row {
 }
 
 .landing-container {
-	/*attempt to fix vh unit issue*/
-	height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-	height: calc(var(--vh, 1vh) * 100);
+	min-height: 100%;
 }
 
 /******************Wish List Tiles*******************/

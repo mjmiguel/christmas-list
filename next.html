@@ -20,16 +20,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>	
 	<body>
-	    <script>
-			//scroll down diff of total document height and viewport height; slows before hitting bottom
-			$(document).ready(function(){
-				$("img").on("load", function(){ 
-					var WH = $(window).height();  
-					var SH = $('body').prop("scrollHeight");
-					$('html, body').stop().animate({scrollTop: SH-WH}, 1000); 
-				});
-			});   	
-	    </script>
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
