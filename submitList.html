@@ -16,10 +16,31 @@
 		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet"> 
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Form validation plugin -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>	
 	<body>
+		<!-- validate forms before submission -->
+		<script type="text/javascript">
+			$(function () {
+	        	$("#btnSubmit").click(function () {
+	            	var yourName = $("#your-name");
+	            	var yourList = $("#your-list")
+	            	if (yourName.val() == "") {
+	                	//If the "Choose..." option is selected display error.
+	                	alert("Please select your name");
+	                	return false;
+	            	} else if(yourList.val().trim().length < 1) {
+	            		//if text area is empty (including spaces)
+	            		alert("Please type your list")
+	            		return false;
+	            	}
+	            	return true;
+	        	});
+    		});
+		</script>
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
@@ -42,34 +63,35 @@
 				</div>
 				<div class="col-md-10">
 					<div class="">
-						<form action="https://formspree.io/xledgoqp" method="POST">
+						<form action="https://formspree.io/xledgoqp" method="POST" id="list-submit-form">
 							<input type="hidden" name="_next" value="christmas-list/next.html"/> <!-- change landing page after form submission -->
 							<div class="form-group">
 							    <label for="your-name">Your Name:</label>
-							    <select class="form-control" id="your-name" name="myName">
-							    	<option>Bob</option>
-							    	<option>Carol</option>
-							    	<option>Dan</option>
-							    	<option>Holly</option>
-							    	<option>Jaimie</option>
-							    	<option>Jamaal</option>
-							    	<option>Josh</option>
-							    	<option>Karli</option>
-							    	<option>Lauren</option>
-							    	<option>Mark</option>
-							    	<option>Michael</option>
-							    	<option>Mike W.</option>
-							    	<option>Mikie</option>
-							    	<option>Pat</option>
+							    <select class="form-control required" id="your-name" name="your-name">
+							    	<option value="">Choose...</option>
+							    	<option value="Bob">Bob</option>
+							    	<option value="Carol">Carol</option>
+							    	<option value="Dan">Dan</option>
+							    	<option value="Holly">Holly</option>
+							    	<option value="Jaimie">Jaimie</option>
+							    	<option value="Jamaal">Jamaal</option>
+							    	<option value="Josh">Josh</option>
+							    	<option value="Karli">Karli</option>
+							    	<option value="Lauren">Lauren</option>
+							    	<option value="Mark">Mark</option>
+							    	<option value="Michael">Michael M.</option>
+							    	<option value="Mike">Mike W.</option>
+							    	<option value="Mikie">Mikie</option>
+							    	<option value="Pat">Pat</option>
 							    </select>
 							</div>
 							<div class="form-group">
 								<label for="wish-list">Your Wish List:</label>
 								<!-- id="submitTextarea" -->
-								<textarea class="form-control" id="html" cols="60" rows="10" placeholder="Type here. I'll make it look nice." name="myWishlist"></textarea>
+								<textarea class="form-control" id="your-list" cols="60" rows="10" placeholder="Type here. I'll make it look nice." name="myWishlist"></textarea>
 							</div>
 							<div class="form-group text-center">
-								<button type="submit" class="btn btn-outline-primary submit">SUBMIT</button>
+								<button type="submit" class="btn btn-outline-primary submit" id="btnSubmit">SUBMIT</button>
 							</div>
 						</form>
 					</div>
