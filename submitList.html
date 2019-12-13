@@ -26,15 +26,18 @@
 		<script type="text/javascript">
 			$(function () {
 	        	$("#btnSubmit").click(function () {
+	        		$(".hideMe").hide(); //hide any alerts
 	            	var yourName = $("#your-name");
 	            	var yourList = $("#your-list")
 	            	if (yourName.val() == "") {
 	                	//If the "Choose..." option is selected display error.
-	                	alert("Please select your name");
+						$("#your-name-alert").show(); //show hidden div with list
+						$("#your-name-alert").addClass("hideMe"); //tag for destruction (concealment)
 	                	return false;
 	            	} else if(yourList.val().trim().length < 1) {
 	            		//if text area is empty (including spaces)
-	            		alert("Please type your list")
+	            		$("#your-list-alert").show(); //show hidden div with list
+						$("#your-list-alert").addClass("hideMe"); //tag for destruction (concealment)
 	            		return false;
 	            	}
 	            	return true;
@@ -83,13 +86,19 @@
 							    	<option value="Mike">Mike W.</option>
 							    	<option value="Mikie">Mikie</option>
 							    	<option value="Pat">Pat</option>
-							    </select>
+							    </select> 
 							</div>
+							<div id="your-name-alert" class="alert alert-danger hideMe" role="alert">
+							  	Please choose your name
+							</div> 
 							<div class="form-group">
 								<label for="wish-list">Your Wish List:</label>
 								<!-- id="submitTextarea" -->
 								<textarea class="form-control" id="your-list" cols="60" rows="10" placeholder="Type here. I'll make it look nice." name="myWishlist"></textarea>
 							</div>
+							<div id="your-list-alert" class="alert alert-danger hideMe" role="alert">
+							  	Please type out your list
+							</div> 
 							<div class="form-group text-center">
 								<button type="submit" class="btn btn-outline-primary submit" id="btnSubmit">SUBMIT</button>
 							</div>
